@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "1873f3e1c673746cce83d853ea95c751"
+build_time: [1515029464, 445593000]
+inputs:
+  "/Users/SimonChu/Documents/Swift/Is Prime/Is Prime/ViewController.swift": !dirty [1515029464, 0]
+  "/Users/SimonChu/Documents/Swift/Is Prime/Is Prime/AppDelegate.swift": [1515027641, 0]

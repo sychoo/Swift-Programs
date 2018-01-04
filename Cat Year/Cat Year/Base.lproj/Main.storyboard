@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cat_Year" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xb0-ii-clK">
+                                <rect key="frame" x="146" y="40" width="83.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.20732879913665503" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the age of your cat~" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vml-nr-TWf">
+                                <rect key="frame" x="93" y="122" width="189.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7U-uG-btu">
+                                <rect key="frame" x="163" y="216" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cd4-Rf-V6F"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The age in Cat Year is: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3k-pC-59I">
+                                <rect key="frame" x="100" y="299" width="175" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MD-ye-l1Q">
+                                <rect key="frame" x="129" y="371" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xb0-ii-clK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="286-Rn-Jh6"/>
+                            <constraint firstItem="vml-nr-TWf" firstAttribute="top" secondItem="Xb0-ii-clK" secondAttribute="bottom" constant="58" id="3jc-nR-IQd"/>
+                            <constraint firstItem="S3k-pC-59I" firstAttribute="top" secondItem="f7U-uG-btu" secondAttribute="bottom" constant="53" id="6rd-jM-tXs"/>
+                            <constraint firstItem="f7U-uG-btu" firstAttribute="top" secondItem="vml-nr-TWf" secondAttribute="bottom" constant="64" id="9Na-wG-2eP"/>
+                            <constraint firstItem="Xb0-ii-clK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9d8-tM-bGf"/>
+                            <constraint firstItem="f7U-uG-btu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KfT-UP-Z2J"/>
+                            <constraint firstItem="vml-nr-TWf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bEc-jm-C9c"/>
+                            <constraint firstItem="3MD-ye-l1Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h27-tP-Hid"/>
+                            <constraint firstItem="S3k-pC-59I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iGZ-UR-8Iy"/>
+                            <constraint firstItem="vml-nr-TWf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lV6-Eb-cJA"/>
+                            <constraint firstItem="3MD-ye-l1Q" firstAttribute="top" secondItem="S3k-pC-59I" secondAttribute="bottom" constant="51" id="p3Q-Wn-IGb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="vml-nr-TWf" id="heR-YD-DnK"/>
+                        <outlet property="yearField" destination="3MD-ye-l1Q" id="xW7-aW-OB8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
