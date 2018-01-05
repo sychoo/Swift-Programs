@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "41b45dec33a8088701e7603afa791219"
+build_time: [1515174630, 991828000]
+inputs:
+  "/Users/SimonChu/Documents/Swift/Date and Time/Date and Time/ViewController.swift": [1515174630, 0]
+  "/Users/SimonChu/Documents/Swift/Date and Time/Date and Time/AppDelegate.swift": [1515172088, 0]

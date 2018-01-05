@@ -199,11 +199,14 @@ SWIFT_CLASS("_TtC13Date_and_Time11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC13Date_and_Time14ViewController")
 @interface ViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified Label;
+- (void)getTime;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

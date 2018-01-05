@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "c85b2361672b1c77f2f2c088d006df4a"
+build_time: [1515173805, 680021000]
+inputs:
+  "/Users/SimonChu/Documents/Swift/Egg Timer/Egg Timer/ViewController.swift": [1466159314, 0]
+  "/Users/SimonChu/Documents/Swift/Egg Timer/Egg Timer/AppDelegate.swift": [1466158166, 0]
