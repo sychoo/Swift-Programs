@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "57b4d08362119c77925e4ca7fdd3393f"
+build_time: [1515037520, 765380000]
+inputs:
+  "/Users/SimonChu/Downloads/4.02/Menu Bars/Menu Bars/ViewController.swift": [1466159691, 0]
+  "/Users/SimonChu/Downloads/4.02/Menu Bars/Menu Bars/AppDelegate.swift": [1466155883, 0]
