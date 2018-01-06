@@ -206,11 +206,21 @@ SWIFT_CLASS("_TtC13Date_and_Time11AppDelegate")
 SWIFT_CLASS("_TtC13Date_and_Time14ViewController")
 @interface ViewController : UIViewController
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified Label;
-- (void)getTime;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface ViewController (SWIFT_EXTENSION(Date_and_Time))
+- (NSString * _Nonnull)getLocalTime SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getBeijingTime SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)getGMTshift SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getGMTstr SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)localTimeZone SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)BeijingTimeZone SWIFT_WARN_UNUSED_RESULT;
+- (void)updateLocal;
 @end
 
 SWIFT_MODULE_NAMESPACE_POP
