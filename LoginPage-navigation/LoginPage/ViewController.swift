@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     // password reset
     @IBAction func forgotPasswordTapped(_ sender: Any)
     {
-        let forgotPasswordAlert = UIAlertController(title: "Forgot Password?", message: "Don't worry. We can reset it for you. Just enter your email adress here.", preferredStyle: .alert)
+        let forgotPasswordAlert = UIAlertController(title: "Forgot Password?", message: "Don't worry. We can reset it for you. Just enter your email address here.", preferredStyle: .alert)
         forgotPasswordAlert.addTextField
         {
                 (textField) in textField.placeholder = "Enter you email address"
