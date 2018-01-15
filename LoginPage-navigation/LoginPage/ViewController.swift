@@ -59,6 +59,7 @@ class ViewController: UIViewController {
         
     }
     
+    // password reset
     @IBAction func forgotPasswordTapped(_ sender: Any)
     {
         let forgotPasswordAlert = UIAlertController(title: "Forgot Password?", message: "Don't worry. We can reset it for you. Just enter your email adress here.", preferredStyle: .alert)
@@ -88,6 +89,7 @@ class ViewController: UIViewController {
         }))
     }
     
+    // sign-in
     @IBAction func signInButtonTapped(_ sender: UIButton)
     {
         if let email = emailTextField.text, let pass = passwordTextField.text

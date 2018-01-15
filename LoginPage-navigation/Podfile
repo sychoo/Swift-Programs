@@ -8,4 +8,5 @@ target 'LoginPage' do
   # Pods for LoginPage
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 end
