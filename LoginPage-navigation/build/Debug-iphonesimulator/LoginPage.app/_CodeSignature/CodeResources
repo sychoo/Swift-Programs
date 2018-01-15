@@ -38,7 +38,7 @@
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher</key>
 		<data>
-		DVABLJPEvorfh5AOu4DLZkvuhJI=
+		/OZwWwtMpBEnvWIzjkiCK18oATA=
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/Info.plist</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac</key>
 		<data>
-		A6z0kRUOqzlbq0Eefb60YD2thzI=
+		8fddBDAyutJVtRoDvUHsb7EpeaA=
 		</data>
 		<key>Frameworks/GoogleToolboxForMac.framework/Info.plist</key>
 		<data>
@@ -59,6 +59,18 @@
 		<key>Frameworks/GoogleToolboxForMac.framework/_CodeSignature/CodeResources</key>
 		<data>
 		+T5UoQKzhHs030chTZZ/hfFXvP8=
+		</data>
+		<key>Frameworks/leveldb.framework/Info.plist</key>
+		<data>
+		RTRLF1GGGVBqq4Vc4jo0MlMwVpI=
+		</data>
+		<key>Frameworks/leveldb.framework/_CodeSignature/CodeResources</key>
+		<data>
+		7nQocuaVWF7eAScEs4FiUM7xMqc=
+		</data>
+		<key>Frameworks/leveldb.framework/leveldb</key>
+		<data>
+		u6gQnM1CEHUMGwv4XpnPWaoMGsc=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -122,7 +134,7 @@
 		</data>
 		<key>Frameworks/nanopb.framework/nanopb</key>
 		<data>
-		Gh/jEVMomo5roMEU0MeHiehKRSY=
+		w/tW84ZoZBsbAXAFaJYGSh9qO+I=
 		</data>
 		<key>GoogleService-Info.plist</key>
 		<data>
@@ -235,11 +247,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DVABLJPEvorfh5AOu4DLZkvuhJI=
+			/OZwWwtMpBEnvWIzjkiCK18oATA=
 			</data>
 			<key>hash2</key>
 			<data>
-			seGMqaKngVQHprzaqlcVmf/5lkR1KK+/ddg+Jbc0Q6E=
+			6RexsST1N88GIPigjUVyruNNCCfyYo+yCC0YOIv0c8g=
 			</data>
 		</dict>
 		<key>Frameworks/GTMSessionFetcher.framework/Info.plist</key>
@@ -268,11 +280,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			A6z0kRUOqzlbq0Eefb60YD2thzI=
+			8fddBDAyutJVtRoDvUHsb7EpeaA=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZDdrYKGKa5zORp3i8bsFehFCaw/ISzhPFtyOv3weppQ=
+			BluQ9zbZ5WvDjcovKfY+IFyosg6ZtpQ8HfQKJH/VrM4=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleToolboxForMac.framework/Info.plist</key>
@@ -295,6 +307,39 @@
 			<key>hash2</key>
 			<data>
 			kw0pbSpBG8gzoCxCfstkyeZJWurVo3zajbOmI9h8Pqs=
+			</data>
+		</dict>
+		<key>Frameworks/leveldb.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RTRLF1GGGVBqq4Vc4jo0MlMwVpI=
+			</data>
+			<key>hash2</key>
+			<data>
+			6mSBRI0Y8NmJVHwWqo5mwS83SFCW88jSUt5n6EulByI=
+			</data>
+		</dict>
+		<key>Frameworks/leveldb.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7nQocuaVWF7eAScEs4FiUM7xMqc=
+			</data>
+			<key>hash2</key>
+			<data>
+			1dqHW+a+LtD3KgLSVmL//AzQnRlvQnWp1GsIAd5fBJA=
+			</data>
+		</dict>
+		<key>Frameworks/leveldb.framework/leveldb</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u6gQnM1CEHUMGwv4XpnPWaoMGsc=
+			</data>
+			<key>hash2</key>
+			<data>
+			zBfADrzliV4V+2cMVIfLGtsB43BIgGcC9BBrqE6QltI=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -466,11 +511,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Gh/jEVMomo5roMEU0MeHiehKRSY=
+			w/tW84ZoZBsbAXAFaJYGSh9qO+I=
 			</data>
 			<key>hash2</key>
 			<data>
-			WzRJT8zV0vB9v8C8q0ebH7gRto9vg1PuF4h0/qrYfIo=
+			q0yxkdNWgauj/+s6OJFGsafRhbdyrAOS7r06aaDxe84=
 			</data>
 		</dict>
 		<key>GoogleService-Info.plist</key>

@@ -217,8 +217,8 @@ SWIFT_CLASS("_TtC9LoginPage14ViewController")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified signInButton;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (IBAction)signInSelectorChanged:(UISegmentedControl * _Nonnull)sender;
 - (IBAction)forgotPasswordTapped:(id _Nonnull)sender;
+- (IBAction)signInSelectorChanged:(UISegmentedControl * _Nonnull)sender;
 - (IBAction)signInButtonTapped:(UIButton * _Nonnull)sender;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
