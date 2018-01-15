@@ -1,0 +1,11 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "461d25f606e0483036df7f16d2ac3ead"
+build_time: [1515960241, 544577000]
+inputs:
+  "/Users/SimonChu/Documents/Swift/Firebase-Login-Fancy-UI/FirebaseDemo/HelperExtensions.swift": [1505496130, 0]
+  "/Users/SimonChu/Documents/Swift/Firebase-Login-Fancy-UI/FirebaseDemo/LoginViewController.swift": [1505496130, 0]
+  "/Users/SimonChu/Documents/Swift/Firebase-Login-Fancy-UI/FirebaseDemo/MenuViewController.swift": [1505496130, 0]
+  "/Users/SimonChu/Documents/Swift/Firebase-Login-Fancy-UI/FirebaseDemo/AppDelegate.swift": [1505496130, 0]
+  "/Users/SimonChu/Documents/Swift/Firebase-Login-Fancy-UI/FirebaseDemo/RoundedWhiteButton.swift": [1505496130, 0]
+  "/Users/SimonChu/Documents/Swift/Firebase-Login-Fancy-UI/FirebaseDemo/InitialViewController.swift": [1505496130, 0]
+  "/Users/SimonChu/Documents/Swift/Firebase-Login-Fancy-UI/FirebaseDemo/SignUpViewController.swift": [1505496130, 0]
