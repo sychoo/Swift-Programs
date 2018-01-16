@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "237eb3b9ad95bb9731c805bd16d29098"
+build_time: [1516046569, 323016000]
+inputs:
+  "/Users/SimonChu/Documents/Swift/LoginPage-verification, reset and navigation/LoginPage/ViewController.swift": [1516046549, 0]
+  "/Users/SimonChu/Documents/Swift/LoginPage-verification, reset and navigation/LoginPage/AppDelegate.swift": [1515945325, 0]

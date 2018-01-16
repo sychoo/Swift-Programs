@@ -1,6 +1,0 @@
-version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
-options: "1b48572179b85f1485cf7a993859ff6d"
-build_time: [1516035309, 812832000]
-inputs:
-  "/Users/SimonChu/Documents/Swift/LoginPage-navigation/LoginPage/ViewController.swift": [1516035121, 0]
-  "/Users/SimonChu/Documents/Swift/LoginPage-navigation/LoginPage/AppDelegate.swift": [1515945325, 0]
