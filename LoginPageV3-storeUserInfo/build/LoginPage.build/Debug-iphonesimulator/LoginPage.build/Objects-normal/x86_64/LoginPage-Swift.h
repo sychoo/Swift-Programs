@@ -199,17 +199,26 @@ SWIFT_CLASS("_TtC9LoginPage11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC9LoginPage8MainPage")
+@interface MainPage : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UISegmentedControl;
 @class UILabel;
 @class UITextField;
 @class UIButton;
 @class UITouch;
 @class UIEvent;
-@class NSBundle;
-@class NSCoder;
 
-SWIFT_CLASS("_TtC9LoginPage14ViewController")
-@interface ViewController : UIViewController
+SWIFT_CLASS("_TtC9LoginPage10SignInPage")
+@interface SignInPage : UIViewController
 @property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified signInSelector;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified signInLabel;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailTextField;
@@ -221,6 +230,16 @@ SWIFT_CLASS("_TtC9LoginPage14ViewController")
 - (IBAction)signInSelectorChanged:(UISegmentedControl * _Nonnull)sender;
 - (IBAction)signInButtonTapped:(UIButton * _Nonnull)sender;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9LoginPage11SuccessPage")
+@interface SuccessPage : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)signOutTapped:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

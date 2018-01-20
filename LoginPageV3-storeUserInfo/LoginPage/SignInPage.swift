@@ -10,8 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-
-class ViewController: UIViewController {
+class SignInPage: UIViewController {
     
     
     @IBOutlet weak var signInSelector: UISegmentedControl!
@@ -111,7 +110,7 @@ class ViewController: UIViewController {
                         if User!.isEmailVerified
                         {
                             // User is found, and Email address is verified, check if the user is signing in for the first time
-                            self.performSegue(withIdentifier: "goHome", sender: self)
+                            self.performSegue(withIdentifier: "signInSuccessSegue", sender: self)
                         }
                         else
                         {

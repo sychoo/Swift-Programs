@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-1022" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In Page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginPage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignInPage" customModule="LoginPage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,39 +131,71 @@
                         <outlet property="signInButton" destination="nA9-0X-ZkF" id="X5G-U7-idT"/>
                         <outlet property="signInLabel" destination="xnr-fI-H5V" id="MzN-p1-E3d"/>
                         <outlet property="signInSelector" destination="wcC-hR-woM" id="qcn-wO-qNm"/>
-                        <segue destination="8ox-s3-i8p" kind="show" identifier="goHome" id="WHw-Ft-aIx"/>
+                        <segue destination="8ox-s3-i8p" kind="show" identifier="signInSuccessSegue" id="WHw-Ft-aIx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-174" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Success Page-->
         <scene sceneID="Bke-9Q-sNq">
             <objects>
-                <viewController id="8ox-s3-i8p" sceneMemberID="viewController">
+                <viewController id="8ox-s3-i8p" customClass="SuccessPage" customModule="LoginPage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Whw-du-iXn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkR-Cv-Mgr">
-                                <rect key="frame" x="133" y="315.5" width="109.5" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="8lX-6b-9NJ">
+                                <rect key="frame" x="84.5" y="237.5" width="206.5" height="192"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're Signed In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkR-Cv-Mgr">
+                                        <rect key="frame" x="0.0" y="0.0" width="206.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaV-oA-9ar">
+                                        <rect key="frame" x="28" y="66" width="151" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="151" id="Chw-vR-O8u"/>
+                                            <constraint firstAttribute="height" constant="48" id="Ejl-FI-gW8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Main Page">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wON-UI-R9h">
+                                        <rect key="frame" x="28" y="144" width="151" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="XcA-gM-AgH"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="151" id="rVX-E7-4RR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Sign Out">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signOutTapped:" destination="8ox-s3-i8p" eventType="touchUpInside" id="8xM-WZ-0Aa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0043579558841884136" green="0.99666577577590942" blue="0.41415619850158691" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lkR-Cv-Mgr" firstAttribute="centerX" secondItem="Whw-du-iXn" secondAttribute="centerX" id="dyP-Rn-L2e"/>
-                            <constraint firstItem="lkR-Cv-Mgr" firstAttribute="centerY" secondItem="Whw-du-iXn" secondAttribute="centerY" id="ema-zR-EV8"/>
+                            <constraint firstItem="8lX-6b-9NJ" firstAttribute="centerX" secondItem="Whw-du-iXn" secondAttribute="centerX" id="OtQ-oc-fm4"/>
+                            <constraint firstItem="8lX-6b-9NJ" firstAttribute="centerY" secondItem="Whw-du-iXn" secondAttribute="centerY" id="hzr-sg-NkM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0am-PB-8N5"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="271-RD-9kp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="624.79999999999995" y="133.5832083958021"/>
+            <point key="canvasLocation" x="735" y="134"/>
         </scene>
     </scenes>
 </document>
