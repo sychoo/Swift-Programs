@@ -19,6 +19,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         FirebaseApp.configure()
+/*
+        Database.database().isPersistenceEnabled = true
+        Database.database().reference().child("users").setValue("Hello from the other side") // real time database test
+
+        let docRef = Firestore.firestore().document("user/userInfo")
+        let dataToSave: [String: Any] = ["First Name": "Simon", "Last Name": "Chu"]
+        docRef.setData(dataToSave) { (error) in
+            if let error = error
+            {
+                print("\(error.localizedDescription)")
+            }
+            else
+            {
+                print("Data has been saved!")
+            }
+        }
+     // cloud firestore test
+        let db = Firestore.firestore()
+        db.collection("cities").document("LA").setData(["name": "Los Angeles", "state": "CA"])
+        {(error: Error?) in if let error = error {
+            print("\(error.localizedDescription)")
+            }
+        else{
+            print("Data Saved!")
+            }
+        }
+ */
         return true
     }
 

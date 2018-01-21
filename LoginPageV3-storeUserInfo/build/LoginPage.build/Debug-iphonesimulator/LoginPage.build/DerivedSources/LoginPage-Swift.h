@@ -237,9 +237,12 @@ SWIFT_CLASS("_TtC9LoginPage10SignInPage")
 
 SWIFT_CLASS("_TtC9LoginPage11SuccessPage")
 @interface SuccessPage : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified uidLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailLabel;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)signOutTapped:(id _Nonnull)sender;
+- (IBAction)mainPageTapped:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

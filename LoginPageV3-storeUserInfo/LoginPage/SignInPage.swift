@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-import FirebaseAuth
+//import FirebaseAuth
 
 class SignInPage: UIViewController {
     
@@ -30,7 +30,10 @@ class SignInPage: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        // Display only an arrow in the next ViewController navigation bar
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning()
