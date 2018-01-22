@@ -14,6 +14,11 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var docRef: DocumentReference!
     
+    var cellDict: [String:String?]
+    {
+        return ["First Name": nil, "Last Name": "Chu"]
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,13 +68,7 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
       */
         }
-        
-        let cellDictionary = ["First Name": "Simon", "Last Name": "Chu"]
-        for i in cellDictionary.keys
-        {
-            print(i)
-        }
-
+    
         // Do any additional setup after loading the view.
     }
 
@@ -81,7 +80,7 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     // Table View
     let array = ["Hello", "World"]
-    let cellDict = ["First Name": "Simon", "Last Name": "Chu"]
+    //let cellDict = ["First Name": "Simon", "Last Name": "Chu"]
     
     internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -93,10 +92,14 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
     {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
         let keyStr: String! = Array(cellDict.keys)[indexPath.row]
-        let valueStr: String? = cellDict[Array(cellDict.keys)[indexPath.row]] as? String
-        cell.textLabel?.text = keyStr + ": " + valueStr!
+        let valueStr: String! = cellDict[Array(cellDict.keys)[indexPath.row]] as? String ?? ""
+        cell.textLabel?.text = keyStr + ": " + valueStr
         
         return cell
+    }
+    
+    internal func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "Segue", sender: nil)
     }
 
     

@@ -1,8 +1,8 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "c38b3286a704e5bb0f472d5a6525c692"
-build_time: [1516587861, 671662000]
+build_time: [1516589750, 272869000]
 inputs:
   "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/LoginPage/SignInPage.swift": [1516504186, 0]
-  "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/LoginPage/MainPage.swift": [1516587860, 0]
+  "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/LoginPage/MainPage.swift": !private [1516589749, 0]
   "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/LoginPage/SuccessPage.swift": [1516544067, 0]
   "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/LoginPage/AppDelegate.swift": [1516542010, 0]
