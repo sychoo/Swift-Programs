@@ -8,7 +8,7 @@ provides-member:
 - ["13Date_and_Time14ViewControllerC", "dict"]
 - ["13Date_and_Time14ViewControllerC", "getLocalTime"]
 - ["13Date_and_Time14ViewControllerC", "getBeijingTime"]
-- ["13Date_and_Time14ViewControllerC", "getGMTshift"]
+- ["13Date_and_Time14ViewControllerC", "getLocalGMTshift"]
 - ["13Date_and_Time14ViewControllerC", "getGMTstr"]
 - ["13Date_and_Time14ViewControllerC", "localTimeZone"]
 - ["13Date_and_Time14ViewControllerC", "BeijingTimeZone"]
@@ -21,8 +21,8 @@ provides-dynamic-lookup:
 - "dict"
 - "didReceiveMemoryWarning"
 - "getBeijingTime"
-- "getGMTshift"
 - "getGMTstr"
+- "getLocalGMTshift"
 - "getLocalTime"
 - "localTimeZone"
 - "timeZone"
@@ -405,8 +405,8 @@ depends-member:
 - ["So8NSObjectC", "dict"]
 - ["So8NSObjectC", "didReceiveMemoryWarning"]
 - ["So8NSObjectC", "getBeijingTime"]
-- ["So8NSObjectC", "getGMTshift"]
 - ["So8NSObjectC", "getGMTstr"]
+- ["So8NSObjectC", "getLocalGMTshift"]
 - ["So8NSObjectC", "getLocalTime"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "localTimeZone"]
@@ -613,8 +613,8 @@ depends-member:
 - ["So11UIResponderC", "dict"]
 - ["So11UIResponderC", "didReceiveMemoryWarning"]
 - ["So11UIResponderC", "getBeijingTime"]
-- ["So11UIResponderC", "getGMTshift"]
 - ["So11UIResponderC", "getGMTstr"]
+- ["So11UIResponderC", "getLocalGMTshift"]
 - ["So11UIResponderC", "getLocalTime"]
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "localTimeZone"]
@@ -720,8 +720,8 @@ depends-member:
 - ["So16UIViewControllerC", "dict"]
 - ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - ["So16UIViewControllerC", "getBeijingTime"]
-- ["So16UIViewControllerC", "getGMTshift"]
 - ["So16UIViewControllerC", "getGMTstr"]
+- ["So16UIViewControllerC", "getLocalGMTshift"]
 - ["So16UIViewControllerC", "getLocalTime"]
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "localTimeZone"]
@@ -750,8 +750,8 @@ depends-member:
 - ["13Date_and_Time14ViewControllerC", "dict"]
 - ["13Date_and_Time14ViewControllerC", "didReceiveMemoryWarning"]
 - ["13Date_and_Time14ViewControllerC", "getBeijingTime"]
-- ["13Date_and_Time14ViewControllerC", "getGMTshift"]
 - ["13Date_and_Time14ViewControllerC", "getGMTstr"]
+- ["13Date_and_Time14ViewControllerC", "getLocalGMTshift"]
 - ["13Date_and_Time14ViewControllerC", "getLocalTime"]
 - ["13Date_and_Time14ViewControllerC", "init"]
 - ["13Date_and_Time14ViewControllerC", "localTimeZone"]
@@ -929,4 +929,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "410c468775ed30e86dea028b553133df"
+interface-hash: "4aadda45a893a38fd3c4e90a6a38c645"

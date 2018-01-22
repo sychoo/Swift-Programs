@@ -29,7 +29,7 @@ import UIKit
     
     func getBeijingTime() -> String // function that get local time
     {
-        let value = "Asia/Hong_Kong" // abbreviation or identifier
+        let value = "Asia/Hong_Kong" // abbreviation or identifier///////////////////////////
         let date = Date()
         let dateFormatter = DateFormatter()
         //dateFormatter.timeZone = TimeZone(secondsFromGMT:28800)

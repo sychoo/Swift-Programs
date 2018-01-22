@@ -226,7 +226,33 @@
                     <view key="view" contentMode="scaleToFill" id="zWQ-Qz-w8e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bG6-ZT-3Tg">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="6tk-dP-TZ6">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6tk-dP-TZ6" id="cO8-de-J3X">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="uN7-op-HHU" id="vLl-WQ-cQT"/>
+                                    <outlet property="delegate" destination="uN7-op-HHU" id="9c5-Cf-BNj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bG6-ZT-3Tg" firstAttribute="top" secondItem="wl5-rT-Nyg" secondAttribute="top" id="5N3-td-hNP"/>
+                            <constraint firstItem="bG6-ZT-3Tg" firstAttribute="leading" secondItem="wl5-rT-Nyg" secondAttribute="leading" id="GmE-oS-kjh"/>
+                            <constraint firstItem="wl5-rT-Nyg" firstAttribute="trailing" secondItem="bG6-ZT-3Tg" secondAttribute="trailing" id="wu8-15-Jkx"/>
+                            <constraint firstItem="wl5-rT-Nyg" firstAttribute="bottom" secondItem="bG6-ZT-3Tg" secondAttribute="bottom" id="xEp-Yb-xms"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wl5-rT-Nyg"/>
                     </view>
                 </viewController>

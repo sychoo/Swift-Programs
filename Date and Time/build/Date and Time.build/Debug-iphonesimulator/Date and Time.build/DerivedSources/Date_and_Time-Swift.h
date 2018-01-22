@@ -220,7 +220,7 @@ SWIFT_CLASS("_TtC13Date_and_Time14ViewController")
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dict;
 - (NSString * _Nonnull)getLocalTime SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getBeijingTime SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)getGMTshift SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)getLocalGMTshift SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getGMTstr SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)localTimeZone SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)BeijingTimeZone SWIFT_WARN_UNUSED_RESULT;
