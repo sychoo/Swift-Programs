@@ -10,7 +10,6 @@ import Firebase
 //import FirebaseAuth
 class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-
     @IBOutlet weak var tableView: UITableView!
     let cellKey = ["First Name", "Last Name", "Email", "Phone Number", "Password", "Country", "State/Province", "Birthdate", "Gender", "Bio"]
     let segueID = ["segue1", "segue2", "segue3", "segue4", "segue5", "segue6", "segue7", "segue8", "segue9", "segue10"]
@@ -19,6 +18,7 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Display only an arrow in the next ViewController navigation bar
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
@@ -37,7 +37,14 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
             
             docRef = Firestore.firestore().document("Users/\(uid)/UserInfo/Profile")
             docRef.addSnapshotListener {(docSnapshot, Error) in
-                guard let docSnapshot = docSnapshot, (docSnapshot.exists) else { print("I'm Here");return }
+                guard let docSnapshot = docSnapshot, (docSnapshot.exists)
+                    else
+                    {
+                        let dataFetchingError = UIAlertController(title: "Data Fetching Error", message: "\(Error!.localizedDescription) Please try again. ", preferredStyle: .alert)
+                        dataFetchingError.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        self.present(dataFetchingError, animated: true, completion: nil)
+                        return
+                    }
                 let myData = docSnapshot.data()
             
                 for parameter in self.cellKey
@@ -107,6 +114,6 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     
-    
+//@IBAction func unwindToV2(segue:UIStoryboardSegue) { }
     
 }

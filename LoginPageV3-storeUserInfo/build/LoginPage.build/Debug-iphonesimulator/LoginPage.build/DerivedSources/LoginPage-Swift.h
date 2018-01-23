@@ -202,6 +202,7 @@ SWIFT_CLASS("_TtC9LoginPage11AppDelegate")
 
 @class UITableView;
 @class UITableViewCell;
+@class UIStoryboardSegue;
 @class NSBundle;
 @class NSCoder;
 
@@ -215,6 +216,7 @@ SWIFT_CLASS("_TtC9LoginPage8MainPage")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (IBAction)unwindToV2WithSegue:(UIStoryboardSegue * _Nonnull)segue;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -259,6 +261,9 @@ SWIFT_CLASS("_TtC9LoginPage11SuccessPage")
 
 SWIFT_CLASS("_TtC9LoginPage14UserInfoUpdate")
 @interface UserInfoUpdate : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Nullable firstNameTextField;
+- (IBAction)saveTapped:(id _Nonnull)sender;
+- (IBAction)cancelTapped:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

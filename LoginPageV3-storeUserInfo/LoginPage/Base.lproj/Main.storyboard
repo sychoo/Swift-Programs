@@ -271,13 +271,50 @@
                     <view key="view" contentMode="scaleToFill" id="e78-8Y-c4T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUv-w2-48F">
+                                <rect key="frame" x="0.0" y="37" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Update Info" id="hbJ-Z2-eDa">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="f63-qD-E3n">
+                                            <connections>
+                                                <action selector="cancelTapped:" destination="JTN-SJ-HLw" id="spH-yn-2bR"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="izm-OX-mnt">
+                                            <connections>
+                                                <action selector="saveTapped:" destination="JTN-SJ-HLw" id="2Yk-Er-SID"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XVl-2e-PBv">
+                                <rect key="frame" x="59" y="391" width="257" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BUv-w2-48F" firstAttribute="leading" secondItem="xIo-20-HTd" secondAttribute="leading" id="1qZ-dP-zbu"/>
+                            <constraint firstItem="xIo-20-HTd" firstAttribute="trailing" secondItem="BUv-w2-48F" secondAttribute="trailing" id="3S0-I8-74e"/>
+                            <constraint firstItem="XVl-2e-PBv" firstAttribute="centerY" secondItem="e78-8Y-c4T" secondAttribute="centerY" id="HHJ-0x-uRS"/>
+                            <constraint firstItem="BUv-w2-48F" firstAttribute="leading" secondItem="xIo-20-HTd" secondAttribute="leading" id="JfJ-nH-Hkc"/>
+                            <constraint firstItem="xIo-20-HTd" firstAttribute="top" secondItem="BUv-w2-48F" secondAttribute="top" constant="7" id="MSQ-t5-iGN"/>
+                            <constraint firstItem="XVl-2e-PBv" firstAttribute="centerX" secondItem="e78-8Y-c4T" secondAttribute="centerX" id="Y74-qq-UJS"/>
+                            <constraint firstItem="xIo-20-HTd" firstAttribute="trailing" secondItem="BUv-w2-48F" secondAttribute="trailing" id="fY0-m0-q84"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xIo-20-HTd"/>
                     </view>
+                    <connections>
+                        <outlet property="firstNameTextField" destination="XVl-2e-PBv" id="CKr-6u-HQN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v6a-jY-bUS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2596" y="-1538"/>
+            <point key="canvasLocation" x="2596" y="-1538.423645320197"/>
         </scene>
         <!--User Info Update-->
         <scene sceneID="7EM-p1-vaf">
