@@ -266,7 +266,6 @@ SWIFT_CLASS("_TtC9LoginPage14UserInfoUpdate")
 - (IBAction)saveTapped:(id _Nonnull)sender;
 - (IBAction)cancelTapped:(id _Nonnull)sender;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

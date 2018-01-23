@@ -7,7 +7,6 @@ provides-member:
 - ["9LoginPage14UserInfoUpdateC", ""]
 provides-dynamic-lookup:
 - "cancelTapped"
-- "didReceiveMemoryWarning"
 - "parameterLabel"
 - "saveTapped"
 - "textField"
@@ -22,68 +21,67 @@ depends-top-level:
 - !private "Error"
 - !private "Firestore"
 - !private "SetOptions"
-- !private "StringLiteralType"
 - "UILabel"
 - "UITextField"
 - "UIViewController"
 - "UserInfoUpdate"
-- !private "cellKey"
-- !private "myIndex"
+- "cellKey"
+- "myIndex"
 - !private "print"
 depends-member:
-- !private ["Sa", "subscript"]
+- ["Sa", "subscript"]
 - !private ["So4AuthC", "auth"]
 - !private ["So4AuthC", "currentUser"]
 - !private ["s23BidirectionalCollectionP", "init"]
-- !private ["s23BidirectionalCollectionP", "subscript"]
+- ["s23BidirectionalCollectionP", "subscript"]
 - !private ["So15CALayerDelegateP", "placeholder"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["s7CVarArgP", "Auth"]
 - !private ["s7CVarArgP", "Firestore"]
 - !private ["s7CVarArgP", "SetOptions"]
 - !private ["s7CVarArgP", "auth"]
-- !private ["s7CVarArgP", "cellKey"]
+- ["s7CVarArgP", "cellKey"]
 - !private ["s7CVarArgP", "currentUser"]
-- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
 - !private ["s7CVarArgP", "dismiss"]
 - !private ["s7CVarArgP", "docRef"]
 - !private ["s7CVarArgP", "document"]
 - !private ["s7CVarArgP", "firestore"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "merge"]
-- !private ["s7CVarArgP", "myIndex"]
+- ["s7CVarArgP", "myIndex"]
+- !private ["s7CVarArgP", "parameter"]
 - !private ["s7CVarArgP", "parameterLabel"]
 - !private ["s7CVarArgP", "placeholder"]
 - !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "setData"]
-- !private ["s7CVarArgP", "subscript"]
+- ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "textField"]
 - !private ["s7CVarArgP", "uid"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "subscript"]
+- ["s10CollectionP", "subscript"]
 - !private ["s10ComparableP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "Auth"]
 - !private ["s28CustomDebugStringConvertibleP", "Firestore"]
 - !private ["s28CustomDebugStringConvertibleP", "SetOptions"]
 - !private ["s28CustomDebugStringConvertibleP", "auth"]
-- !private ["s28CustomDebugStringConvertibleP", "cellKey"]
+- ["s28CustomDebugStringConvertibleP", "cellKey"]
 - !private ["s28CustomDebugStringConvertibleP", "currentUser"]
-- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s28CustomDebugStringConvertibleP", "dismiss"]
 - !private ["s28CustomDebugStringConvertibleP", "docRef"]
 - !private ["s28CustomDebugStringConvertibleP", "document"]
 - !private ["s28CustomDebugStringConvertibleP", "firestore"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "merge"]
-- !private ["s28CustomDebugStringConvertibleP", "myIndex"]
+- ["s28CustomDebugStringConvertibleP", "myIndex"]
+- !private ["s28CustomDebugStringConvertibleP", "parameter"]
 - !private ["s28CustomDebugStringConvertibleP", "parameterLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "placeholder"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "setData"]
-- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "textField"]
 - !private ["s28CustomDebugStringConvertibleP", "uid"]
@@ -91,50 +89,50 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
-- !private ["s17CustomReflectableP", "subscript"]
+- ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "Auth"]
 - !private ["s23CustomStringConvertibleP", "Firestore"]
 - !private ["s23CustomStringConvertibleP", "SetOptions"]
 - !private ["s23CustomStringConvertibleP", "auth"]
-- !private ["s23CustomStringConvertibleP", "cellKey"]
+- ["s23CustomStringConvertibleP", "cellKey"]
 - !private ["s23CustomStringConvertibleP", "currentUser"]
-- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s23CustomStringConvertibleP", "dismiss"]
 - !private ["s23CustomStringConvertibleP", "docRef"]
 - !private ["s23CustomStringConvertibleP", "document"]
 - !private ["s23CustomStringConvertibleP", "firestore"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "merge"]
-- !private ["s23CustomStringConvertibleP", "myIndex"]
+- ["s23CustomStringConvertibleP", "myIndex"]
+- !private ["s23CustomStringConvertibleP", "parameter"]
 - !private ["s23CustomStringConvertibleP", "parameterLabel"]
 - !private ["s23CustomStringConvertibleP", "placeholder"]
 - !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "setData"]
-- !private ["s23CustomStringConvertibleP", "subscript"]
+- ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "textField"]
 - !private ["s23CustomStringConvertibleP", "uid"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "subscript"]
+- ["s9DecodableP", "subscript"]
 - !private ["So17DocumentReferenceC", "setData"]
 - !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "subscript"]
+- ["s9EncodableP", "subscript"]
 - !private ["s9EquatableP", "Auth"]
 - !private ["s9EquatableP", "Firestore"]
 - !private ["s9EquatableP", "SetOptions"]
 - !private ["s9EquatableP", "auth"]
-- !private ["s9EquatableP", "cellKey"]
+- ["s9EquatableP", "cellKey"]
 - !private ["s9EquatableP", "currentUser"]
-- !private ["s9EquatableP", "didReceiveMemoryWarning"]
 - !private ["s9EquatableP", "dismiss"]
 - !private ["s9EquatableP", "docRef"]
 - !private ["s9EquatableP", "document"]
 - !private ["s9EquatableP", "firestore"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "merge"]
-- !private ["s9EquatableP", "myIndex"]
+- ["s9EquatableP", "myIndex"]
+- !private ["s9EquatableP", "parameter"]
 - !private ["s9EquatableP", "parameterLabel"]
 - !private ["s9EquatableP", "placeholder"]
 - !private ["s9EquatableP", "print"]
@@ -145,7 +143,7 @@ depends-member:
 - !private ["s9EquatableP", "viewDidLoad"]
 - ["s9EquatableP", ""]
 - !private ["s5ErrorP", "localizedDescription"]
-- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
@@ -155,16 +153,16 @@ depends-member:
 - !private ["s8HashableP", "Firestore"]
 - !private ["s8HashableP", "SetOptions"]
 - !private ["s8HashableP", "auth"]
-- !private ["s8HashableP", "cellKey"]
+- ["s8HashableP", "cellKey"]
 - !private ["s8HashableP", "currentUser"]
-- !private ["s8HashableP", "didReceiveMemoryWarning"]
 - !private ["s8HashableP", "dismiss"]
 - !private ["s8HashableP", "docRef"]
 - !private ["s8HashableP", "document"]
 - !private ["s8HashableP", "firestore"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "merge"]
-- !private ["s8HashableP", "myIndex"]
+- ["s8HashableP", "myIndex"]
+- !private ["s8HashableP", "parameter"]
 - !private ["s8HashableP", "parameterLabel"]
 - !private ["s8HashableP", "placeholder"]
 - !private ["s8HashableP", "print"]
@@ -176,16 +174,16 @@ depends-member:
 - ["s8HashableP", ""]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["s17MutableCollectionP", "subscript"]
+- ["s17MutableCollectionP", "subscript"]
 - !private ["So8NSCodingP", "Auth"]
 - !private ["So8NSCodingP", "Firestore"]
 - !private ["So8NSCodingP", "SetOptions"]
-- !private ["So8NSCodingP", "cellKey"]
-- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- ["So8NSCodingP", "cellKey"]
 - !private ["So8NSCodingP", "dismiss"]
 - !private ["So8NSCodingP", "docRef"]
 - !private ["So8NSCodingP", "init"]
-- !private ["So8NSCodingP", "myIndex"]
+- ["So8NSCodingP", "myIndex"]
+- !private ["So8NSCodingP", "parameter"]
 - !private ["So8NSCodingP", "parameterLabel"]
 - !private ["So8NSCodingP", "placeholder"]
 - !private ["So8NSCodingP", "print"]
@@ -197,12 +195,12 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "Auth"]
 - !private ["So26NSExtensionRequestHandlingP", "Firestore"]
 - !private ["So26NSExtensionRequestHandlingP", "SetOptions"]
-- !private ["So26NSExtensionRequestHandlingP", "cellKey"]
-- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- ["So26NSExtensionRequestHandlingP", "cellKey"]
 - !private ["So26NSExtensionRequestHandlingP", "dismiss"]
 - !private ["So26NSExtensionRequestHandlingP", "docRef"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
-- !private ["So26NSExtensionRequestHandlingP", "myIndex"]
+- ["So26NSExtensionRequestHandlingP", "myIndex"]
+- !private ["So26NSExtensionRequestHandlingP", "parameter"]
 - !private ["So26NSExtensionRequestHandlingP", "parameterLabel"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
 - !private ["So26NSExtensionRequestHandlingP", "textField"]
@@ -220,16 +218,16 @@ depends-member:
 - ["So8NSObjectC", "UITextField"]
 - !private ["So8NSObjectC", "auth"]
 - ["So8NSObjectC", "cancelTapped"]
-- !private ["So8NSObjectC", "cellKey"]
+- ["So8NSObjectC", "cellKey"]
 - !private ["So8NSObjectC", "currentUser"]
-- ["So8NSObjectC", "didReceiveMemoryWarning"]
 - !private ["So8NSObjectC", "dismiss"]
 - ["So8NSObjectC", "docRef"]
 - !private ["So8NSObjectC", "document"]
 - !private ["So8NSObjectC", "firestore"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "merge"]
-- !private ["So8NSObjectC", "myIndex"]
+- ["So8NSObjectC", "myIndex"]
+- ["So8NSObjectC", "parameter"]
 - ["So8NSObjectC", "parameterLabel"]
 - !private ["So8NSObjectC", "placeholder"]
 - !private ["So8NSObjectC", "print"]
@@ -243,16 +241,16 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "Firestore"]
 - !private ["So16NSObjectProtocolP", "SetOptions"]
 - !private ["So16NSObjectProtocolP", "auth"]
-- !private ["So16NSObjectProtocolP", "cellKey"]
+- ["So16NSObjectProtocolP", "cellKey"]
 - !private ["So16NSObjectProtocolP", "currentUser"]
-- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
 - !private ["So16NSObjectProtocolP", "dismiss"]
 - !private ["So16NSObjectProtocolP", "docRef"]
 - !private ["So16NSObjectProtocolP", "document"]
 - !private ["So16NSObjectProtocolP", "firestore"]
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "merge"]
-- !private ["So16NSObjectProtocolP", "myIndex"]
+- ["So16NSObjectProtocolP", "myIndex"]
+- !private ["So16NSObjectProtocolP", "parameter"]
 - !private ["So16NSObjectProtocolP", "parameterLabel"]
 - !private ["So16NSObjectProtocolP", "placeholder"]
 - !private ["So16NSObjectProtocolP", "print"]
@@ -264,11 +262,11 @@ depends-member:
 - ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "init"]
-- !private ["s22RandomAccessCollectionP", "subscript"]
+- ["s22RandomAccessCollectionP", "subscript"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- ["s26RangeReplaceableCollectionP", "subscript"]
 - !private ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "subscript"]
+- ["s8SequenceP", "subscript"]
 - !private ["So10SetOptionsC", "merge"]
 - !private ["SS", "init"]
 - !private ["s14StringProtocolP", "init"]
@@ -281,12 +279,12 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "Auth"]
 - !private ["So21UIAppearanceContainerP", "Firestore"]
 - !private ["So21UIAppearanceContainerP", "SetOptions"]
-- !private ["So21UIAppearanceContainerP", "cellKey"]
-- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- ["So21UIAppearanceContainerP", "cellKey"]
 - !private ["So21UIAppearanceContainerP", "dismiss"]
 - !private ["So21UIAppearanceContainerP", "docRef"]
 - !private ["So21UIAppearanceContainerP", "init"]
-- !private ["So21UIAppearanceContainerP", "myIndex"]
+- ["So21UIAppearanceContainerP", "myIndex"]
+- !private ["So21UIAppearanceContainerP", "parameter"]
 - !private ["So21UIAppearanceContainerP", "parameterLabel"]
 - !private ["So21UIAppearanceContainerP", "placeholder"]
 - !private ["So21UIAppearanceContainerP", "print"]
@@ -297,12 +295,12 @@ depends-member:
 - !private ["So18UIContentContainerP", "Auth"]
 - !private ["So18UIContentContainerP", "Firestore"]
 - !private ["So18UIContentContainerP", "SetOptions"]
-- !private ["So18UIContentContainerP", "cellKey"]
-- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- ["So18UIContentContainerP", "cellKey"]
 - !private ["So18UIContentContainerP", "dismiss"]
 - !private ["So18UIContentContainerP", "docRef"]
 - !private ["So18UIContentContainerP", "init"]
-- !private ["So18UIContentContainerP", "myIndex"]
+- ["So18UIContentContainerP", "myIndex"]
+- !private ["So18UIContentContainerP", "parameter"]
 - !private ["So18UIContentContainerP", "parameterLabel"]
 - !private ["So18UIContentContainerP", "print"]
 - !private ["So18UIContentContainerP", "textField"]
@@ -319,12 +317,12 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "Auth"]
 - !private ["So18UIFocusEnvironmentP", "Firestore"]
 - !private ["So18UIFocusEnvironmentP", "SetOptions"]
-- !private ["So18UIFocusEnvironmentP", "cellKey"]
-- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- ["So18UIFocusEnvironmentP", "cellKey"]
 - !private ["So18UIFocusEnvironmentP", "dismiss"]
 - !private ["So18UIFocusEnvironmentP", "docRef"]
 - !private ["So18UIFocusEnvironmentP", "init"]
-- !private ["So18UIFocusEnvironmentP", "myIndex"]
+- ["So18UIFocusEnvironmentP", "myIndex"]
+- !private ["So18UIFocusEnvironmentP", "parameter"]
 - !private ["So18UIFocusEnvironmentP", "parameterLabel"]
 - !private ["So18UIFocusEnvironmentP", "placeholder"]
 - !private ["So18UIFocusEnvironmentP", "print"]
@@ -340,12 +338,12 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "Auth"]
 - !private ["So30UIPasteConfigurationSupportingP", "Firestore"]
 - !private ["So30UIPasteConfigurationSupportingP", "SetOptions"]
-- !private ["So30UIPasteConfigurationSupportingP", "cellKey"]
-- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- ["So30UIPasteConfigurationSupportingP", "cellKey"]
 - !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
 - !private ["So30UIPasteConfigurationSupportingP", "docRef"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
-- !private ["So30UIPasteConfigurationSupportingP", "myIndex"]
+- ["So30UIPasteConfigurationSupportingP", "myIndex"]
+- !private ["So30UIPasteConfigurationSupportingP", "parameter"]
 - !private ["So30UIPasteConfigurationSupportingP", "parameterLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "placeholder"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
@@ -361,12 +359,12 @@ depends-member:
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "UITextField"]
 - ["So11UIResponderC", "cancelTapped"]
-- !private ["So11UIResponderC", "cellKey"]
-- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- ["So11UIResponderC", "cellKey"]
 - !private ["So11UIResponderC", "dismiss"]
 - ["So11UIResponderC", "docRef"]
 - ["So11UIResponderC", "init"]
-- !private ["So11UIResponderC", "myIndex"]
+- ["So11UIResponderC", "myIndex"]
+- ["So11UIResponderC", "parameter"]
 - ["So11UIResponderC", "parameterLabel"]
 - !private ["So11UIResponderC", "placeholder"]
 - !private ["So11UIResponderC", "print"]
@@ -377,12 +375,12 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Auth"]
 - !private ["So30UIResponderStandardEditActionsP", "Firestore"]
 - !private ["So30UIResponderStandardEditActionsP", "SetOptions"]
-- !private ["So30UIResponderStandardEditActionsP", "cellKey"]
-- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- ["So30UIResponderStandardEditActionsP", "cellKey"]
 - !private ["So30UIResponderStandardEditActionsP", "dismiss"]
 - !private ["So30UIResponderStandardEditActionsP", "docRef"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
-- !private ["So30UIResponderStandardEditActionsP", "myIndex"]
+- ["So30UIResponderStandardEditActionsP", "myIndex"]
+- !private ["So30UIResponderStandardEditActionsP", "parameter"]
 - !private ["So30UIResponderStandardEditActionsP", "parameterLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "placeholder"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
@@ -393,12 +391,12 @@ depends-member:
 - !private ["So16UIStateRestoringP", "Auth"]
 - !private ["So16UIStateRestoringP", "Firestore"]
 - !private ["So16UIStateRestoringP", "SetOptions"]
-- !private ["So16UIStateRestoringP", "cellKey"]
-- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- ["So16UIStateRestoringP", "cellKey"]
 - !private ["So16UIStateRestoringP", "dismiss"]
 - !private ["So16UIStateRestoringP", "docRef"]
 - !private ["So16UIStateRestoringP", "init"]
-- !private ["So16UIStateRestoringP", "myIndex"]
+- ["So16UIStateRestoringP", "myIndex"]
+- !private ["So16UIStateRestoringP", "parameter"]
 - !private ["So16UIStateRestoringP", "parameterLabel"]
 - !private ["So16UIStateRestoringP", "print"]
 - !private ["So16UIStateRestoringP", "textField"]
@@ -419,12 +417,12 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "Auth"]
 - !private ["So18UITraitEnvironmentP", "Firestore"]
 - !private ["So18UITraitEnvironmentP", "SetOptions"]
-- !private ["So18UITraitEnvironmentP", "cellKey"]
-- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- ["So18UITraitEnvironmentP", "cellKey"]
 - !private ["So18UITraitEnvironmentP", "dismiss"]
 - !private ["So18UITraitEnvironmentP", "docRef"]
 - !private ["So18UITraitEnvironmentP", "init"]
-- !private ["So18UITraitEnvironmentP", "myIndex"]
+- ["So18UITraitEnvironmentP", "myIndex"]
+- !private ["So18UITraitEnvironmentP", "parameter"]
 - !private ["So18UITraitEnvironmentP", "parameterLabel"]
 - !private ["So18UITraitEnvironmentP", "placeholder"]
 - !private ["So18UITraitEnvironmentP", "print"]
@@ -442,12 +440,12 @@ depends-member:
 - ["So16UIViewControllerC", "UILabel"]
 - ["So16UIViewControllerC", "UITextField"]
 - ["So16UIViewControllerC", "cancelTapped"]
-- !private ["So16UIViewControllerC", "cellKey"]
-- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- ["So16UIViewControllerC", "cellKey"]
 - !private ["So16UIViewControllerC", "dismiss"]
 - ["So16UIViewControllerC", "docRef"]
 - ["So16UIViewControllerC", "init"]
-- !private ["So16UIViewControllerC", "myIndex"]
+- ["So16UIViewControllerC", "myIndex"]
+- ["So16UIViewControllerC", "parameter"]
 - ["So16UIViewControllerC", "parameterLabel"]
 - !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "saveTapped"]
@@ -464,24 +462,24 @@ depends-member:
 - ["9LoginPage14UserInfoUpdateC", "UILabel"]
 - ["9LoginPage14UserInfoUpdateC", "UITextField"]
 - ["9LoginPage14UserInfoUpdateC", "cancelTapped"]
-- !private ["9LoginPage14UserInfoUpdateC", "cellKey"]
+- ["9LoginPage14UserInfoUpdateC", "cellKey"]
 - ["9LoginPage14UserInfoUpdateC", "deinit"]
-- ["9LoginPage14UserInfoUpdateC", "didReceiveMemoryWarning"]
 - !private ["9LoginPage14UserInfoUpdateC", "dismiss"]
 - ["9LoginPage14UserInfoUpdateC", "docRef"]
 - ["9LoginPage14UserInfoUpdateC", "init"]
-- !private ["9LoginPage14UserInfoUpdateC", "myIndex"]
+- ["9LoginPage14UserInfoUpdateC", "myIndex"]
+- ["9LoginPage14UserInfoUpdateC", "parameter"]
 - ["9LoginPage14UserInfoUpdateC", "parameterLabel"]
 - !private ["9LoginPage14UserInfoUpdateC", "print"]
 - ["9LoginPage14UserInfoUpdateC", "saveTapped"]
 - ["9LoginPage14UserInfoUpdateC", "textField"]
 - ["9LoginPage14UserInfoUpdateC", "viewDidLoad"]
-- !private ["s14_ArrayProtocolP", "subscript"]
+- ["s14_ArrayProtocolP", "subscript"]
 - !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
+- ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "placeholder"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
-- !private ["s24_DestructorSafeContainerP", "subscript"]
+- ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
@@ -489,23 +487,23 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "subscript"]
+- ["s10_IndexableP", "subscript"]
 - !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "subscript"]
+- ["s14_IndexableBaseP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Firestore"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SetOptions"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "cellKey"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "cellKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentUser"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "docRef"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "document"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "firestore"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "merge"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "myIndex"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "myIndex"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "parameter"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "parameterLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "placeholder"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
@@ -515,31 +513,31 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["s17_MutableIndexableP", "subscript"]
+- ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
+- ["s21_ObjectiveCBridgeableP", "subscript"]
+- ["s22_RandomAccessIndexableP", "subscript"]
 - !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
+- ["s26_RangeReplaceableIndexableP", "subscript"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
-- !private "Sa"
+- "Sa"
 - !private "So4AuthC"
-- !private "s23BidirectionalCollectionP"
+- "s23BidirectionalCollectionP"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
-- !private "s10CollectionP"
+- "s10CollectionP"
 - !private "s10ComparableP"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
-- !private "s17CustomReflectableP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
+- "s9DecodableP"
 - !private "So17DocumentReferenceC"
-- !private "s9EncodableP"
+- "s9EncodableP"
 - "s9EquatableP"
 - !private "s5ErrorP"
-- !private "s25ExpressibleByArrayLiteralP"
+- "s25ExpressibleByArrayLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
@@ -547,7 +545,7 @@ depends-nominal:
 - "s8HashableP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "s17MutableCollectionP"
+- "s17MutableCollectionP"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
@@ -558,9 +556,9 @@ depends-nominal:
 - "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
-- !private "s8SequenceP"
+- "s22RandomAccessCollectionP"
+- "s26RangeReplaceableCollectionP"
+- "s8SequenceP"
 - !private "So10SetOptionsC"
 - !private "SS"
 - !private "s14StringProtocolP"
@@ -594,23 +592,23 @@ depends-nominal:
 - !private "So4UserC"
 - !private "So8UserInfoP"
 - "9LoginPage14UserInfoUpdateC"
-- !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
+- "s14_ArrayProtocolP"
+- "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
-- !private "s24_DestructorSafeContainerP"
+- "s24_DestructorSafeContainerP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
-- !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
+- "s17_MutableIndexableP"
+- "s21_ObjectiveCBridgeableP"
+- "s22_RandomAccessIndexableP"
+- "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -702,4 +700,4 @@ depends-external:
 - "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-interface-hash: "638c68960f4deea2502d01cd29706733"
+interface-hash: "63fa39c93159fe8b5040e55c71060a5a"

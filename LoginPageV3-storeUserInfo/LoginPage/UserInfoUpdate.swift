@@ -42,6 +42,7 @@ class UserInfoUpdate: UIViewController {
                     print("Data Saved!")
                 }
             }
+
         }
         //performSegue(withIdentifier: "unwindSegueToV2", sender: self)
         //MainPage().loadCell()
@@ -154,10 +155,11 @@ class UserInfoUpdate: UIViewController {
 
 
     //var cellValue = [firstName.self, lastName, firstName, lastName, email, phoneNumber, password, country, state, DOB]
-    
+ /*
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+*/
 
 }

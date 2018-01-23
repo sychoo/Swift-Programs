@@ -15,8 +15,9 @@ let cellKey = ["First Name", "Last Name", "Bio", "Email", "Phone Number", "Passw
 
 class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
-    var docListener: ListenerRegistration!
     @IBOutlet weak var tableView: UITableView!
+    var docListener: ListenerRegistration!
+    
     var cellValue:Array<String> = []
     
     override func viewDidLoad()
@@ -30,12 +31,12 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource
     {
         super.viewDidAppear(animated)
         self.tableView.reloadData()
+        print("view did appear") //test
     }
     
     override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
-        
         var docRef: DocumentReference!
         
         // fetch the data from cloud
@@ -58,6 +59,8 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource
                 }
                 let myData = docSnapshot.data()
                 
+                self.cellValue = []
+                
                 for parameter in cellKey
                 {
                     if parameter == "Password"
@@ -71,6 +74,7 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource
                 }
             }
         }
+        //self.tableView.reloadData()
     }
     
     override func viewWillDisappear(_ animated: Bool)
