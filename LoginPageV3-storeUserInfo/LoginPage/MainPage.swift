@@ -1,30 +1,42 @@
 //
-//  mainPage.swift
+//  MainPage.swift
 //  LoginPage
 //
 //  Created by Administrator on 20/01/2018.
 //  Copyright © 2018 Simon Chu. All rights reserved.
 //
+
 import UIKit
 import Firebase
 //import FirebaseAuth
-class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+
+var myIndex:Int!
+let cellKey = ["First Name", "Last Name", "Bio", "Email", "Phone Number", "Password", "Country", "State/Province", "Birthdate", "Gender"]
+
+class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource
+{
+    var docListener: ListenerRegistration!
     @IBOutlet weak var tableView: UITableView!
-    let cellKey = ["First Name", "Last Name", "Email", "Phone Number", "Password", "Country", "State/Province", "Birthdate", "Gender", "Bio"]
-    let segueID = ["segue1", "segue2", "segue3", "segue4", "segue5", "segue6", "segue7", "segue8", "segue9", "segue10"]
-    //var cellValue = ["","","","","","","",""]
     var cellValue:Array<String> = []
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        
         // Display only an arrow in the next ViewController navigation bar
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+  
+    override func viewDidAppear(_ animated: Bool)
+    {
+        super.viewDidAppear(animated)
+        self.tableView.reloadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+        super.viewWillAppear(animated)
         
         var docRef: DocumentReference!
-        
-        
         
         // fetch the data from cloud
         let user = Auth.auth().currentUser
@@ -34,20 +46,19 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
             //let email = user.email
             
             // fetch the data from cloud
-            
             docRef = Firestore.firestore().document("Users/\(uid)/UserInfo/Profile")
-            docRef.addSnapshotListener {(docSnapshot, Error) in
+            docListener = docRef.addSnapshotListener {(docSnapshot, Error) in
                 guard let docSnapshot = docSnapshot, (docSnapshot.exists)
                     else
-                    {
-                        let dataFetchingError = UIAlertController(title: "Data Fetching Error", message: "\(Error!.localizedDescription) Please try again. ", preferredStyle: .alert)
-                        dataFetchingError.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                        self.present(dataFetchingError, animated: true, completion: nil)
-                        return
-                    }
+                {
+                    let dataFetchingError = UIAlertController(title: "Data Fetching Error", message: "\(Error!.localizedDescription) Please try again. ", preferredStyle: .alert)
+                    dataFetchingError.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(dataFetchingError, animated: true, completion: nil)
+                    return
+                }
                 let myData = docSnapshot.data()
-            
-                for parameter in self.cellKey
+                
+                for parameter in cellKey
                 {
                     if parameter == "Password"
                     {
@@ -58,35 +69,25 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
                         self.cellValue.append(myData![parameter] as? String ?? "(none)")
                     }
                 }
-                    /*
-                self.cellValue.append(myData!["First Name"] as? String ?? "(none)")
-                self.cellValue.append(myData!["Last Name"] as? String ?? "(none)")
-                self.cellValue.append(myData!["Email"] as? String ?? "(none)")
-                self.cellValue.append(myData!["Phone Number"] as? String ?? "(none)")
-                self.cellValue.append("●●●●●●")
-                self.cellValue.append(myData!["Country"] as? String ?? "(none)")
-                self.cellValue.append(myData!["State"] as? String ?? "(none)")
-                self.cellValue.append(myData!["Birthdate"] as? String ?? "(none)")
-                self.cellValue.append(myData!["Gender"] as? String ?? "(none)")
-          */
-                //print("\n\n \(lastName), \(firstName)\n\n")
-               // self.tableView.reloadData()
             }
-
-    }
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        self.tableView.reloadData()
+        }
     }
     
-    override func didReceiveMemoryWarning() {
+    override func viewWillDisappear(_ animated: Bool)
+    {
+        super.viewWillDisappear(animated)
+        self.docListener.remove() // Enhance Performance
+    }
+    
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    func numberOfSections(in tableView: UITableView) -> Int {
+    
+    func numberOfSections(in tableView: UITableView) -> Int
+    {
         return 1
     }
     
@@ -110,10 +111,8 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: segueID[indexPath.row], sender: nil)
+        myIndex = indexPath.row
+        performSegue(withIdentifier: "updateSegue", sender: nil)
     }
-    
-    
-//@IBAction func unwindToV2(segue:UIStoryboardSegue) { }
     
 }

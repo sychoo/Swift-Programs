@@ -257,7 +257,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="bG6-ZT-3Tg" id="3Kg-Tq-FNx"/>
-                        <segue destination="JTN-SJ-HLw" kind="presentation" identifier="segue1" id="iFV-eG-hEa"/>
+                        <segue destination="JTN-SJ-HLw" kind="presentation" identifier="updateSegue" id="iFV-eG-hEa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Kk-Lu-cRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -278,7 +278,7 @@
                                     <navigationItem title="Update Info" id="hbJ-Z2-eDa">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="f63-qD-E3n">
                                             <connections>
-                                                <action selector="cancelTapped:" destination="JTN-SJ-HLw" id="spH-yn-2bR"/>
+                                                <action selector="cancelTapped:" destination="JTN-SJ-HLw" id="sZG-DI-q96"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="izm-OX-mnt">
@@ -289,167 +289,41 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XVl-2e-PBv">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XVl-2e-PBv">
                                 <rect key="frame" x="59" y="391" width="257" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aB-Tl-FIz">
+                                <rect key="frame" x="16" y="292" width="343" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="BUv-w2-48F" firstAttribute="leading" secondItem="xIo-20-HTd" secondAttribute="leading" id="1qZ-dP-zbu"/>
                             <constraint firstItem="xIo-20-HTd" firstAttribute="trailing" secondItem="BUv-w2-48F" secondAttribute="trailing" id="3S0-I8-74e"/>
+                            <constraint firstItem="XVl-2e-PBv" firstAttribute="top" secondItem="3aB-Tl-FIz" secondAttribute="bottom" constant="63" id="EZW-fg-Twv"/>
                             <constraint firstItem="XVl-2e-PBv" firstAttribute="centerY" secondItem="e78-8Y-c4T" secondAttribute="centerY" id="HHJ-0x-uRS"/>
                             <constraint firstItem="BUv-w2-48F" firstAttribute="leading" secondItem="xIo-20-HTd" secondAttribute="leading" id="JfJ-nH-Hkc"/>
                             <constraint firstItem="xIo-20-HTd" firstAttribute="top" secondItem="BUv-w2-48F" secondAttribute="top" constant="7" id="MSQ-t5-iGN"/>
                             <constraint firstItem="XVl-2e-PBv" firstAttribute="centerX" secondItem="e78-8Y-c4T" secondAttribute="centerX" id="Y74-qq-UJS"/>
                             <constraint firstItem="xIo-20-HTd" firstAttribute="trailing" secondItem="BUv-w2-48F" secondAttribute="trailing" id="fY0-m0-q84"/>
+                            <constraint firstItem="3aB-Tl-FIz" firstAttribute="centerX" secondItem="e78-8Y-c4T" secondAttribute="centerX" id="kDN-t3-kdC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xIo-20-HTd"/>
                     </view>
                     <connections>
-                        <outlet property="firstNameTextField" destination="XVl-2e-PBv" id="CKr-6u-HQN"/>
+                        <outlet property="parameterLabel" destination="3aB-Tl-FIz" id="eAw-qf-Dax"/>
+                        <outlet property="textField" destination="XVl-2e-PBv" id="dmj-of-mvV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v6a-jY-bUS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2596" y="-1538.423645320197"/>
-        </scene>
-        <!--User Info Update-->
-        <scene sceneID="7EM-p1-vaf">
-            <objects>
-                <viewController id="Ukr-2r-hpJ" customClass="UserInfoUpdate" customModule="LoginPage" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lrH-lp-XAd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="YiU-6T-cUq"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dht-Dc-g3a" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2596" y="-889"/>
-        </scene>
-        <!--User Info Update-->
-        <scene sceneID="MSs-5C-jv5">
-            <objects>
-                <viewController id="qza-Ki-JeV" customClass="UserInfoUpdate" customModule="LoginPage" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rEK-fV-Vhd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="ogu-LC-Rhm"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OmQ-5x-w0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2596" y="-228"/>
-        </scene>
-        <!--User Info Update-->
-        <scene sceneID="Zek-vo-gZ7">
-            <objects>
-                <viewController id="fDm-Bg-xLn" customClass="UserInfoUpdate" customModule="LoginPage" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TyC-j3-8sa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="PUN-YK-kJB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tbE-4i-gf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2596" y="440"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="6Ca-rq-w2x">
-            <objects>
-                <viewController id="owr-Bt-tZ8" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="u62-M3-MsN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="gds-rk-FJk"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PFN-qE-mXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2596" y="1113"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="RPP-0b-RIR">
-            <objects>
-                <viewController id="xz3-H4-DdC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oVO-zA-uh0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Rbo-1W-SDb"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="k1O-Qe-j2f" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2596" y="1790"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="jRQ-Wr-RHq">
-            <objects>
-                <viewController id="ogP-B4-E7F" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pIg-Ip-NMl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="azU-sH-giR"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZbH-Jd-XNA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2596" y="2458"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="WUF-6m-HVu">
-            <objects>
-                <viewController id="cNR-jq-P6t" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eAb-Hp-DMz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="IKv-Ty-NHQ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ho3-da-gP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2596" y="3143"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="bIS-YS-m5B">
-            <objects>
-                <viewController id="GfX-Yp-E6g" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="K0k-pN-qOB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="AkY-LX-ZHm"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AOp-X6-QpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2596" y="3837"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="gOT-0X-8oN">
-            <objects>
-                <viewController id="0qV-s7-6OY" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GVS-Fh-jNn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="MJr-Z4-oib"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Wf-8n-xOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2596" y="4502"/>
+            <point key="canvasLocation" x="2672.8000000000002" y="133.74384236453201"/>
         </scene>
     </scenes>
 </document>

@@ -20,7 +20,10 @@ class UserInfoUpdate: UIViewController {
     //var cellValue:Array<String> = []
     
     var docRef: DocumentReference!
-    @IBOutlet weak var firstNameTextField: UITextField?
+    var parameter = cellKey[myIndex]
+    @IBOutlet weak var parameterLabel: UILabel!
+
+    @IBOutlet weak var textField: UITextField!
     
     @IBAction func saveTapped(_ sender: Any)
     {
@@ -31,7 +34,7 @@ class UserInfoUpdate: UIViewController {
             docRef = Firestore.firestore().document("Users/\(uid)/UserInfo/Profile")
             //  db.document("Users/\(uid)/UserInfo/Profile").setData(["name": "Los Angeles", "state": "CA"])
             //db.collection("Users").document(uid).collection("UserInfo").document("Profile").setData(["name": "Los Angeles", "state": "CA"])
-            docRef.setData(["First Name": firstNameTextField?.text! ?? ""], options: SetOptions.merge()) {(error: Error?) in
+            docRef.setData(["\(parameter)": textField?.text! ?? ""], options: SetOptions.merge()) {(error: Error?) in
                 if let error = error {
                     print("\(error.localizedDescription)")
                 }
@@ -41,21 +44,29 @@ class UserInfoUpdate: UIViewController {
             }
         }
         //performSegue(withIdentifier: "unwindSegueToV2", sender: self)
+        //MainPage().loadCell()
         self.dismiss(animated: true, completion: nil)
+        
         //MainPage().tableView.reloadData()
         
     }
-
+    @IBAction func cancelTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    /*
     @IBAction func cancelTapped(_ sender: Any)
     {
         self.dismiss(animated: true, completion: nil)
-        //performSegue(withIdentifier: "unwindSegueToV1", sender: self)
+        
+        //performSegue(withIdentifier: "goBack", sender: self)
         //NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
         //MainPage().tableView.reloadData()
     }
-    
+ */
     override func viewDidLoad() {
         super.viewDidLoad()
+        parameterLabel.text = parameter
+        textField.placeholder = "Please Enter Your \(cellKey[myIndex])"
 
     }
  

@@ -202,7 +202,6 @@ SWIFT_CLASS("_TtC9LoginPage11AppDelegate")
 
 @class UITableView;
 @class UITableViewCell;
-@class UIStoryboardSegue;
 @class NSBundle;
 @class NSCoder;
 
@@ -211,12 +210,13 @@ SWIFT_CLASS("_TtC9LoginPage8MainPage")
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (IBAction)unwindToV2WithSegue:(UIStoryboardSegue * _Nonnull)segue;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -261,7 +261,8 @@ SWIFT_CLASS("_TtC9LoginPage11SuccessPage")
 
 SWIFT_CLASS("_TtC9LoginPage14UserInfoUpdate")
 @interface UserInfoUpdate : UIViewController
-@property (nonatomic, weak) IBOutlet UITextField * _Nullable firstNameTextField;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified parameterLabel;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified textField;
 - (IBAction)saveTapped:(id _Nonnull)sender;
 - (IBAction)cancelTapped:(id _Nonnull)sender;
 - (void)viewDidLoad;

@@ -87,5 +87,7 @@ class SuccessPage: UIViewController {
     {
         self.performSegue(withIdentifier: "goToMain", sender: self)
     }
+    
+
 
 }
