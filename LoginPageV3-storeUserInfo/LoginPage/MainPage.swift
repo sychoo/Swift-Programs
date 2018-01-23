@@ -5,23 +5,26 @@
 //  Created by Administrator on 20/01/2018.
 //  Copyright © 2018 Simon Chu. All rights reserved.
 //
-
 import UIKit
 import Firebase
 //import FirebaseAuth
-
 class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-    var docRef: DocumentReference!
-    
-    var cellDict: [String:String?]
-    {
-        return ["First Name": nil, "Last Name": "Chu"]
-    }
     
 
+    @IBOutlet weak var tableView: UITableView!
+    let cellKey = ["First Name", "Last Name", "Email", "Phone Number", "Password", "Country", "State/Province", "Birthdate", "Gender", "Bio"]
+    let segueID = ["segue1", "segue2", "segue3", "segue4", "segue5", "segue6", "segue7", "segue8", "segue9", "segue10"]
+    //var cellValue = ["","","","","","","",""]
+    var cellValue:Array<String> = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Display only an arrow in the next ViewController navigation bar
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
+        var docRef: DocumentReference!
+        
+        
         
         // fetch the data from cloud
         let user = Auth.auth().currentUser
@@ -31,81 +34,79 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
             //let email = user.email
             
             // fetch the data from cloud
-     
+            
             docRef = Firestore.firestore().document("Users/\(uid)/UserInfo/Profile")
             docRef.addSnapshotListener {(docSnapshot, Error) in
                 guard let docSnapshot = docSnapshot, (docSnapshot.exists) else { print("I'm Here");return }
                 let myData = docSnapshot.data()
-                let firstName = myData!["First Name"] as? String ?? "(none)"
-                let lastName = myData!["Last Name"] as? String ?? "(none)"
-                print("\n\n \(lastName), \(firstName)\n\n")
-        }
             
-        
-
-   /*         docRef = Firestore.firestore().document("Users/\(uid)/UserInfo/Profile")
-            docRef.addSnapshotListener { documentSnapshot, error in
-                    guard let document = documentSnapshot else {
-                        print("Error fetching document: \(error!)")
-                        return
+                for parameter in self.cellKey
+                {
+                    if parameter == "Password"
+                    {
+                        self.cellValue.append("●●●●●●")
                     }
-                    print("Current data: \(document.data())")
-            }
- */
-            // test Cloud Firestore
-   /*
-            let db = Firestore.firestore()
-              //  db.document("Users/\(uid)/UserInfo/Profile").setData(["name": "Los Angeles", "state": "CA"])
-                db.document("Users/\(uid)/UserInfo/Profile").setData(["state": "New York"], options: SetOptions.merge())
-            //db.collection("Users").document(uid).collection("UserInfo").document("Profile").setData(["name": "Los Angeles", "state": "CA"])
-            {(error: Error?) in if let error = error
-            {
-                print("\(error.localizedDescription)")
-            }
-            else{
-                print("Data Saved!")
+                    else
+                    {
+                        self.cellValue.append(myData![parameter] as? String ?? "(none)")
+                    }
                 }
+                    /*
+                self.cellValue.append(myData!["First Name"] as? String ?? "(none)")
+                self.cellValue.append(myData!["Last Name"] as? String ?? "(none)")
+                self.cellValue.append(myData!["Email"] as? String ?? "(none)")
+                self.cellValue.append(myData!["Phone Number"] as? String ?? "(none)")
+                self.cellValue.append("●●●●●●")
+                self.cellValue.append(myData!["Country"] as? String ?? "(none)")
+                self.cellValue.append(myData!["State"] as? String ?? "(none)")
+                self.cellValue.append(myData!["Birthdate"] as? String ?? "(none)")
+                self.cellValue.append(myData!["Gender"] as? String ?? "(none)")
+          */
+                //print("\n\n \(lastName), \(firstName)\n\n")
+               // self.tableView.reloadData()
             }
-      */
-        }
-    
-        // Do any additional setup after loading the view.
-    }
 
+    }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.tableView.reloadData()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
 
-    // Table View
-    let array = ["Hello", "World"]
-    //let cellDict = ["First Name": "Simon", "Last Name": "Chu"]
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
-    internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return cellDict.count
+        //fetchData()
+        let value = min(cellValue.count, cellKey.count)
+        return value
     }
     
     
-    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
+        //fetchData()
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
-        let keyStr: String! = Array(cellDict.keys)[indexPath.row]
-        let valueStr: String! = cellDict[Array(cellDict.keys)[indexPath.row]] as? String ?? ""
+        let keyStr: String! = cellKey[indexPath.row]
+        let valueStr: String! = cellValue[indexPath.row]
         cell.textLabel?.text = keyStr + ": " + valueStr
         
         return cell
     }
     
-    internal func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "Segue", sender: nil)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: segueID[indexPath.row], sender: nil)
     }
-
     
-
-
-
-
+    
+    
+    
 }
-

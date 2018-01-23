@@ -5,6 +5,7 @@
 //  Created by Administrator on 20/01/2018.
 //  Copyright © 2018 Simon Chu. All rights reserved.
 //
+// Display Email, UID, has Sign-out & go to main page function
 
 import UIKit
 import Firebase
