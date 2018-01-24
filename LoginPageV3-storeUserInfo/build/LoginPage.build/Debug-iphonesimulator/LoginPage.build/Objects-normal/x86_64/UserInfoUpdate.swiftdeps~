@@ -12,6 +12,7 @@ provides-dynamic-lookup:
 - "textField"
 - "viewDidLoad"
 depends-top-level:
+- !private "=="
 - !private "??"
 - "AssignmentPrecedence"
 - !private "Auth"
@@ -34,6 +35,7 @@ depends-member:
 - !private ["So4AuthC", "currentUser"]
 - !private ["s23BidirectionalCollectionP", "init"]
 - ["s23BidirectionalCollectionP", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "placeholder"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["s7CVarArgP", "Auth"]
@@ -87,12 +89,15 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "uid"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "init"]
 - ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "Auth"]
 - !private ["s23CustomStringConvertibleP", "Firestore"]
 - !private ["s23CustomStringConvertibleP", "SetOptions"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "auth"]
 - ["s23CustomStringConvertibleP", "cellKey"]
 - !private ["s23CustomStringConvertibleP", "currentUser"]
@@ -114,14 +119,17 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "uid"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "init"]
 - ["s9DecodableP", "subscript"]
 - !private ["So17DocumentReferenceC", "setData"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "init"]
 - ["s9EncodableP", "subscript"]
 - !private ["s9EquatableP", "Auth"]
 - !private ["s9EquatableP", "Firestore"]
 - !private ["s9EquatableP", "SetOptions"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "auth"]
 - ["s9EquatableP", "cellKey"]
 - !private ["s9EquatableP", "currentUser"]
@@ -144,6 +152,7 @@ depends-member:
 - ["s9EquatableP", ""]
 - !private ["s5ErrorP", "localizedDescription"]
 - ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
@@ -152,6 +161,7 @@ depends-member:
 - !private ["s8HashableP", "Auth"]
 - !private ["s8HashableP", "Firestore"]
 - !private ["s8HashableP", "SetOptions"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "auth"]
 - ["s8HashableP", "cellKey"]
 - !private ["s8HashableP", "currentUser"]
@@ -172,6 +182,7 @@ depends-member:
 - !private ["s8HashableP", "uid"]
 - !private ["s8HashableP", "viewDidLoad"]
 - ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - ["s17MutableCollectionP", "subscript"]
@@ -480,6 +491,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "placeholder"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
@@ -514,6 +526,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - ["s17_MutableIndexableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - ["s21_ObjectiveCBridgeableP", "subscript"]
 - ["s22_RandomAccessIndexableP", "subscript"]
@@ -524,6 +537,7 @@ depends-nominal:
 - "Sa"
 - !private "So4AuthC"
 - "s23BidirectionalCollectionP"
+- !private "Sb"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - "s10CollectionP"
@@ -538,6 +552,7 @@ depends-nominal:
 - "s9EquatableP"
 - !private "s5ErrorP"
 - "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
@@ -596,6 +611,7 @@ depends-nominal:
 - "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+ <key>clang_version</key>
+<string>Apple LLVM version 9.0.0 (clang-900.0.39.2)</string>
+ <key>files</key>
+ <array>
+  <string>/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/BoringSSL/crypto/pem/pem_lib.c</string>
+ </array>
+ <key>diagnostics</key>
+ <array>
+  <dict>
+   <key>path</key>
+   <array>
+    <dict>
+     <key>kind</key><string>event</string>
+     <key>location</key>
+     <dict>
+      <key>line</key><integer>293</integer>
+      <key>col</key><integer>13</integer>
+      <key>file</key><integer>0</integer>
+     </dict>
+     <key>ranges</key>
+     <array>
+       <array>
+        <dict>
+         <key>line</key><integer>293</integer>
+         <key>col</key><integer>20</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+        <dict>
+         <key>line</key><integer>293</integer>
+         <key>col</key><integer>20</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+       </array>
+     </array>
+     <key>depth</key><integer>0</integer>
+     <key>extended_message</key>
+     <string>Value stored to &apos;klen&apos; is never read</string>
+     <key>message</key>
+     <string>Value stored to &apos;klen&apos; is never read</string>
+    </dict>
+   </array>
+   <key>description</key><string>Value stored to &apos;klen&apos; is never read</string>
+   <key>category</key><string>Dead store</string>
+   <key>type</key><string>Dead assignment</string>
+   <key>check_name</key><string>deadcode.DeadStores</string>
+   <!-- This hash is experimental and going to change! -->
+   <key>issue_hash_content_of_line_in_context</key><string>4686f67a77a2f1ae0027516a9e6d401d</string>
+  <key>issue_context_kind</key><string>function</string>
+  <key>issue_context</key><string>PEM_ASN1_write_bio</string>
+  <key>issue_hash_function_offset</key><string>36</string>
+  <key>location</key>
+  <dict>
+   <key>line</key><integer>293</integer>
+   <key>col</key><integer>13</integer>
+   <key>file</key><integer>0</integer>
+  </dict>
+  </dict>
+  <dict>
+   <key>path</key>
+   <array>
+    <dict>
+     <key>kind</key><string>event</string>
+     <key>location</key>
+     <dict>
+      <key>line</key><integer>367</integer>
+      <key>col</key><integer>5</integer>
+      <key>file</key><integer>0</integer>
+     </dict>
+     <key>ranges</key>
+     <array>
+       <array>
+        <dict>
+         <key>line</key><integer>367</integer>
+         <key>col</key><integer>12</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+        <dict>
+         <key>line</key><integer>367</integer>
+         <key>col</key><integer>12</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+       </array>
+     </array>
+     <key>depth</key><integer>0</integer>
+     <key>extended_message</key>
+     <string>Value stored to &apos;klen&apos; is never read</string>
+     <key>message</key>
+     <string>Value stored to &apos;klen&apos; is never read</string>
+    </dict>
+   </array>
+   <key>description</key><string>Value stored to &apos;klen&apos; is never read</string>
+   <key>category</key><string>Dead store</string>
+   <key>type</key><string>Dead assignment</string>
+   <key>check_name</key><string>deadcode.DeadStores</string>
+   <!-- This hash is experimental and going to change! -->
+   <key>issue_hash_content_of_line_in_context</key><string>3caf8a6170efb798ecaa17c38e17ff25</string>
+  <key>issue_context_kind</key><string>function</string>
+  <key>issue_context</key><string>PEM_do_header</string>
+  <key>issue_hash_function_offset</key><string>12</string>
+  <key>location</key>
+  <dict>
+   <key>line</key><integer>367</integer>
+   <key>col</key><integer>5</integer>
+   <key>file</key><integer>0</integer>
+  </dict>
+  </dict>
+ </array>
+</dict>
+</plist>
