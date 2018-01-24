@@ -207,6 +207,7 @@ SWIFT_CLASS("_TtC9LoginPage11AppDelegate")
 
 SWIFT_CLASS("_TtC9LoginPage8MainPage")
 @interface MainPage : UIViewController <UITableViewDataSource, UITableViewDelegate>
+- (IBAction)deleteButtonTapped:(id _Nonnull)sender;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;

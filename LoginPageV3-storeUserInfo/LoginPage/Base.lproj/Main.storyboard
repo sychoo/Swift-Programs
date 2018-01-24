@@ -230,6 +230,18 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bG6-ZT-3Tg">
                                 <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HDb-LQ-iXm">
+                                    <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.98756223917007446" green="0.099703647196292877" blue="0.015803707763552666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <state key="normal" title="Delete Account">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="deleteButtonTapped:" destination="uN7-op-HHU" eventType="touchUpInside" id="Fur-8b-gIw"/>
+                                    </connections>
+                                </button>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="6tk-dP-TZ6">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -258,11 +270,59 @@
                     <connections>
                         <outlet property="tableView" destination="bG6-ZT-3Tg" id="3Kg-Tq-FNx"/>
                         <segue destination="JTN-SJ-HLw" kind="presentation" identifier="updateSegue" id="iFV-eG-hEa"/>
+                        <segue destination="kcz-ib-0bg" kind="show" identifier="phoneNumberUpdateSegue" id="XMc-9P-W9R"/>
+                        <segue destination="Hy1-le-FMA" kind="show" identifier="emailUpdateSegue" id="bFE-bq-5Ps"/>
+                        <segue destination="v63-BL-33d" kind="show" identifier="passwordUpdateSegue" id="T6K-ck-8Ym"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Kk-Lu-cRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1708" y="133"/>
+        </scene>
+        <!--User Info Update-->
+        <scene sceneID="OuO-Gc-wVK">
+            <objects>
+                <viewController id="kcz-ib-0bg" customClass="UserInfoUpdate" customModule="LoginPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a1e-hH-wCi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="EQd-QX-ufk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4bm-Tg-cTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2757" y="-534"/>
+        </scene>
+        <!--User Info Update-->
+        <scene sceneID="vNJ-Um-PiV">
+            <objects>
+                <viewController id="Hy1-le-FMA" customClass="UserInfoUpdate" customModule="LoginPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F3J-J2-npS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1vb-qC-r0u"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OZc-sE-5Je" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2756" y="-1223"/>
+        </scene>
+        <!--User Info Update-->
+        <scene sceneID="zMO-oI-4xK">
+            <objects>
+                <viewController id="v63-BL-33d" customClass="UserInfoUpdate" customModule="LoginPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q33-lR-wXu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="iK7-Pf-UZr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H8Q-AI-RmY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2756" y="-1942"/>
         </scene>
         <!--User Info Update-->
         <scene sceneID="qaK-ee-yST">
@@ -323,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v6a-jY-bUS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2672.8000000000002" y="133.74384236453201"/>
+            <point key="canvasLocation" x="2756" y="132"/>
         </scene>
     </scenes>
 </document>
