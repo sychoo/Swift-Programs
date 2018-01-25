@@ -26,6 +26,11 @@ class UserInfoUpdate: UIViewController {
     
     @IBAction func saveTapped(_ sender: Any)
     {
+        // if the user did not type in anything, leave the field as what is was.
+        // if the user did type, update
+        
+    if textField?.text != ""
+    {
         let user = Auth.auth().currentUser
         /*
         if parameter == "Password"
@@ -59,6 +64,11 @@ class UserInfoUpdate: UIViewController {
 
         }
         self.dismiss(animated: true, completion: nil)
+        } // if statement
+    else
+    {
+        self.dismiss(animated: true, completion: nil)
+    }
     }
     @IBAction func cancelTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)

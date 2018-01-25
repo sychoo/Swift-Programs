@@ -1,0 +1,302 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FirstTimeSignIn"
+provides-nominal:
+- "9LoginPage15FirstTimeSignInC"
+provides-member:
+- ["9LoginPage15FirstTimeSignInC", ""]
+provides-dynamic-lookup:
+- "continueTapped"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+depends-top-level:
+- "FirstTimeSignIn"
+- !private "StringLiteralType"
+- "UIViewController"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "performSegue"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "performSegue"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "performSegue"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "didReceiveMemoryWarning"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "performSegue"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- ["s9EquatableP", ""]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["9LoginPage15FirstTimeSignInC", "continueTapped"]
+- ["9LoginPage15FirstTimeSignInC", "deinit"]
+- ["9LoginPage15FirstTimeSignInC", "didReceiveMemoryWarning"]
+- ["9LoginPage15FirstTimeSignInC", "init"]
+- !private ["9LoginPage15FirstTimeSignInC", "performSegue"]
+- ["9LoginPage15FirstTimeSignInC", "viewDidLoad"]
+- !private ["s8HashableP", "didReceiveMemoryWarning"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "performSegue"]
+- !private ["s8HashableP", "viewDidLoad"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "performSegue"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "performSegue"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "continueTapped"]
+- ["So8NSObjectC", "didReceiveMemoryWarning"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "performSegue"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "performSegue"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "performSegue"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "performSegue"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "performSegue"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "performSegue"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "continueTapped"]
+- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "performSegue"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "performSegue"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "performSegue"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "performSegue"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", ""]
+- ["So16UIViewControllerC", "continueTapped"]
+- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "performSegue"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", ""]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "performSegue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "9LoginPage15FirstTimeSignInC"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- "So18UIFocusEnvironmentP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- "So16UIViewControllerC"
+- !private "s23_BidirectionalIndexableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSnapshotMetadata.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRCollectionReference.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentReference.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentChange.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestore.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FirebaseFirestore.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldValue.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRWriteBatch.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldPath.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRListenerRegistration.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRTransaction.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreSettings.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSetOptions.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreErrors.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRGeoPoint.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentSnapshot.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuerySnapshot.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuery.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Modules/module.modulemap"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+interface-hash: "5d4cf4b008900373dd57047913576b0a"

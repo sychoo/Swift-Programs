@@ -16,6 +16,7 @@
 		C35CFA1C200BB28700EC402F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35CFA1B200BB28700EC402F /* Assets.xcassets */; };
 		C35CFA1F200BB28700EC402F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35CFA1D200BB28700EC402F /* LaunchScreen.storyboard */; };
 		C35CFA27200BB3A000EC402F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C35CFA26200BB3A000EC402F /* GoogleService-Info.plist */; };
+		C384749F201A82B600E36728 /* FirstTimeSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C384749E201A82B600E36728 /* FirstTimeSignIn.swift */; };
 		C3DA6326201627DE001C62A5 /* UserInfoUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DA6325201627DE001C62A5 /* UserInfoUpdate.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		C35CFA1E200BB28700EC402F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C35CFA20200BB28700EC402F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C35CFA26200BB3A000EC402F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C384749E201A82B600E36728 /* FirstTimeSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTimeSignIn.swift; sourceTree = "<group>"; };
 		C3DA6325201627DE001C62A5 /* UserInfoUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoUpdate.swift; sourceTree = "<group>"; };
 		CEA9E93D567BB6D0133B0799 /* Pods_LoginPage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginPage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 				C35CFA14200BB28700EC402F /* AppDelegate.swift */,
 				C35CFA16200BB28700EC402F /* SignInPage.swift */,
 				C325CFA22013AEA10034D56C /* SuccessPage.swift */,
+				C384749E201A82B600E36728 /* FirstTimeSignIn.swift */,
 				C325CFA02013AC850034D56C /* MainPage.swift */,
 				C3DA6325201627DE001C62A5 /* UserInfoUpdate.swift */,
 				C35CFA18200BB28700EC402F /* Main.storyboard */,
@@ -251,6 +254,7 @@
 				C35CFA17200BB28700EC402F /* SignInPage.swift in Sources */,
 				C325CFA12013AC850034D56C /* MainPage.swift in Sources */,
 				C325CFA32013AEA10034D56C /* SuccessPage.swift in Sources */,
+				C384749F201A82B600E36728 /* FirstTimeSignIn.swift in Sources */,
 				C3DA6326201627DE001C62A5 /* UserInfoUpdate.swift in Sources */,
 				C35CFA15200BB28700EC402F /* AppDelegate.swift in Sources */,
 			);

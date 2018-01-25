@@ -200,10 +200,20 @@ SWIFT_CLASS("_TtC9LoginPage11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableView;
-@class UITableViewCell;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC9LoginPage15FirstTimeSignIn")
+@interface FirstTimeSignIn : UIViewController
+- (IBAction)continueTapped:(id _Nonnull)sender;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+@class UITableViewCell;
 
 SWIFT_CLASS("_TtC9LoginPage8MainPage")
 @interface MainPage : UIViewController <UITableViewDataSource, UITableViewDelegate>
@@ -251,7 +261,10 @@ SWIFT_CLASS("_TtC9LoginPage11SuccessPage")
 @interface SuccessPage : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified uidLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified isFirstTimeSignIn;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (IBAction)signOutTapped:(id _Nonnull)sender;
 - (IBAction)mainPageTapped:(id _Nonnull)sender;
