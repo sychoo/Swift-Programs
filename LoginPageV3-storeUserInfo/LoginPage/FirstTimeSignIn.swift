@@ -7,11 +7,19 @@
 //
 
 import UIKit
+import Firebase
 
 class FirstTimeSignIn: UIViewController {
 
     @IBAction func continueTapped(_ sender: Any)
     {
+        let user = Auth.auth().currentUser
+        // set isFirstTimeSignIn False after the user fill in the information
+        if let user = user
+        {
+            let uid = user.uid
+            Firestore.firestore().document("Users/\(uid)/UserInfo/Logs").setData(["isFirstTimeSignIn" : false])
+        }
         performSegue(withIdentifier: "goToMainScreen", sender: self)
     }
     override func viewDidLoad() {
@@ -35,5 +43,14 @@ class FirstTimeSignIn: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    /*
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        // Dismiss the keyboard when the view is tapped on
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+    }
+ */
 
 }

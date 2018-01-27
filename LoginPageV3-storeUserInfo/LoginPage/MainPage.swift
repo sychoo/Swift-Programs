@@ -19,30 +19,14 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource
     @IBAction func deleteButtonTapped(_ sender: Any)
     {
         // Delete Account Action
-        let forgotPasswordAlert = UIAlertController(title: "Forgot Password?", message: "Don't worry. We can reset it for you. Just enter your email address here.", preferredStyle: .alert)
-        forgotPasswordAlert.addTextField
-            {
-                (textField) in textField.placeholder = "Enter you email address"
-        }
-        forgotPasswordAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        self.present(forgotPasswordAlert, animated: true, completion: nil)
-        forgotPasswordAlert.addAction(UIAlertAction(title: "Reset Password", style: .default, handler:{ (action) in
-            let resetEmail = forgotPasswordAlert.textFields?.first?.text
-            Auth.auth().sendPasswordReset(withEmail: resetEmail!, completion: { (Error) in
-                if Error != nil
-                {
-                    let resetFailedAlert = UIAlertController(title: "Reset Failed", message: "Error: \(Error!.localizedDescription) Please try again. ", preferredStyle: .alert)
-                    resetFailedAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                    self.present(resetFailedAlert, animated: true, completion: nil)
-                }
-                else
-                {
-                    let resetEmailSentAlert = UIAlertController(title: "Reset Email Sent", message: "A password reset email has been sent to your registered Email address successfully. Please check your Email and follow the instruction.", preferredStyle: .alert)
-                    resetEmailSentAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                    self.present(resetEmailSentAlert, animated: true, completion: nil)
-                }
-            })
-            
+        let deleteAccountAlert = UIAlertController(title: "Delete Your Account", message: "Once you delete your account, there is no going back. Please be certain.", preferredStyle: .alert)
+
+        deleteAccountAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+
+        deleteAccountAlert.addAction(UIAlertAction(title: "Continue", style: .default, handler:{ (action) in
+            self.performSegue(withIdentifier: "deleteAccountSegue", sender: self)
+        
+        self.present(deleteAccountAlert, animated: true, completion: nil)
         }))
     }
     @IBOutlet weak var tableView: UITableView!
@@ -177,24 +161,14 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         myIndex = indexPath.row
 
-        let parameter1 = cellKey[myIndex]
+        let para = cellKey[myIndex]
         
-        // show the corresponding segue for updating parameter
-        if parameter1 == "Password"
+        // reauthentic the user if the user updates the following parameters
+        if (para == "Password") || (para == "Email") || (para == "Phone Number")
         {
-            performSegue(withIdentifier: "passwordUpdateSegue", sender: self)
+            performSegue(withIdentifier: "reauthenticateSegue", sender: self)
         }
-            
-        else if parameter1 == "Email"
-        {
-            performSegue(withIdentifier: "emailUpdateSegue", sender: self)
-        }
-            
-        else if parameter1 == "Phone Number"
-        {
-            performSegue(withIdentifier: "phoneNumberUpdateSegue", sender: self)
-        }
-            
+        
         else
         {
             performSegue(withIdentifier: "updateSegue", sender: self)

@@ -73,6 +73,7 @@ class SuccessPage: UIViewController {
                 {
                     self.isFirstTimeSignIn.text = "not the first time:("
                 }
+                //docRef.setData(["isFirstTimeSignIn" : false])
             }
         }
     }
