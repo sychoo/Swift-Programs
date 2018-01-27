@@ -21,10 +21,10 @@ class UserInfoUpdate: UIViewController {
     var docRef: DocumentReference!
     
     // parameter that is passed from last segue
-    var parameter = cellKey[myIndex]
+    //var parameter = cellKey[myIndex]
     
     // textfield for reauth window
-    @IBOutlet weak var reauthPassword: UITextField?
+
     
     
     // labels for regular info update windows
@@ -33,69 +33,14 @@ class UserInfoUpdate: UIViewController {
     // textfield for regular info update windows
     @IBOutlet weak var textField: UITextField!
     
-    @IBAction func continueTapped(_ sender: Any)
-    {
-        // get email address from user
-        let user = Auth.auth().currentUser
-        var email: String!
-        if let user = user
-        {
-            email = user.email
-        }
-        
-        var credential: AuthCredential // credential string
-        let password = reauthPassword?.text // get password string
-        
-        //prompt user to re-enter info
-        credential = EmailAuthProvider.credential(withEmail: email!, password: password!)
-        
-        user?.reauthenticate(with: credential, completion: { (error) in
-            if error != nil
-            {
-                let reauthAlert = UIAlertController(title: "Error Reauthenticating User", message: "\(error?.localizedDescription ?? "Error Occurred when reauthenticating user") Please try again.", preferredStyle: .alert)
-                
-                //reauthAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-                
-                reauthAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                    
-                    self.present(reauthAlert, animated: true, completion: nil)
-            }
-            else
-            {
-                //user reauthenticated successfully
-                // Update Password Segue
-                if self.parameter == "Password"
-                {
-                    self.performSegue(withIdentifier: "passwordUpdateSegue", sender: self)
-                }
-                    
-                    // Update Email Segue
-                else if self.parameter == "Email"
-                {
-                    self.performSegue(withIdentifier: "emailUpdateSegue", sender: self)
-                }
-                    
-                    // Update Phone Number Segue
-                else if self.parameter == "Phone Number"
-                {
-                    self.performSegue(withIdentifier: "phoneNumberUpdateSegue", sender: self)
-                }
-                    
-                else
-                {
-                    print("Error!")
-                }
-            }
-        })
 
-    }
     
     @IBAction func saveTapped(_ sender: Any)
     {
         // if the user did not type in anything, leave the field as what is was.
         // if the user did type, update their information
         
-        if textField?.text != ""
+        if ((textField?.text != "") && (parameter != "Password"))
         {
             let user = Auth.auth().currentUser
             /*
@@ -119,7 +64,7 @@ class UserInfoUpdate: UIViewController {
                     docRef = Firestore.firestore().document("Users/\(uid)/UserInfo/Profile")
                     //  db.document("Users/\(uid)/UserInfo/Profile").setData(["name": "Los Angeles", "state": "CA"])
                     //db.collection("Users").document(uid).collection("UserInfo").document("Profile").setData(["name": "Los Angeles", "state": "CA"])
-                    docRef.setData(["\(parameter)": textField?.text! ?? ""], options: SetOptions.merge()) {(error: Error?) in
+                    docRef.setData(["\(parameter!)": textField?.text! ?? ""], options: SetOptions.merge()) {(error: Error?) in
                         if let error = error
                         {
                             print("\(error.localizedDescription)")
@@ -128,11 +73,82 @@ class UserInfoUpdate: UIViewController {
                         {
                             print("Data Saved!")
                         }
-                }
+                    }
 
             }
-            self.dismiss(animated: true, completion: nil)
-            } // if statement
+            
+            if parameter == "Email"
+            {
+                // Verify new Email address, Update UserProfile (database), Warning : Cannot Login if Email Not Verified,Please Provide the accurate information. & VERIFY
+                // Additional Action other than updating database
+                if let user = Auth.auth().currentUser
+                {
+                    user.updateEmail(to: textField.text!, completion: { (Error) in
+                    if Error != nil
+                    {
+                        // print error message
+                        print("\(Error?.localizedDescription ?? "Error")")
+                    }
+                    
+                    else
+                    {
+                        // successfully updated
+                        print("Success")
+                    }
+                        
+                    })
+                }
+            }
+                
+            else if parameter == "Phone Number"
+            {
+                // Phone Number Update. Verify Phone Number ASAP, Enter 6-digit verification code. Update User Profile (Database)
+                // Additional Action other than updating database
+                if let user = Auth.auth().currentUser
+                {
+                    /*user.updatePhoneNumber(<#T##phoneNumberCredential: PhoneAuthCredential##PhoneAuthCredential#>, completion: { (Error) in
+                        if Error != nil
+                        {
+                            // print error message
+                        }
+                            
+                        else
+                        {
+                            // successfully updated
+                        }
+                        
+                    })*/
+                }
+ 
+            }
+            
+            else
+            {
+                self.dismiss(animated: true, completion: nil)
+            }
+        } // if text field is not empty
+            
+        else if parameter == "Password"
+        {
+            // Retype Password & Change Password & Sign Out & Go to the main Segue (Exit)
+            // Define Save Button Function
+            if let user = Auth.auth().currentUser
+            {
+                user.updatePassword(to: textField.text!, completion: { (Error) in
+                    if Error != nil
+                    {
+                        // print error message
+                    }
+                        
+                    else
+                    {
+                        // successfully updated
+                    }
+                    
+                })
+            }
+        }
+            
         else
         {
             self.dismiss(animated: true, completion: nil)
@@ -148,18 +164,13 @@ class UserInfoUpdate: UIViewController {
         // Display only an arrow in the next ViewController navigation bar
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
 
-        if (parameter != "Password") && (parameter != "Email") &&        (parameter != "Phone Number")
-        {
-            parameterLabel.text = parameter
-            textField.placeholder = "Please Enter Your Updated \(cellKey[myIndex])"
-        }
+
+        parameterLabel.text = parameter
+        textField.placeholder = "Please Enter Your Updated \(parameter!)"
+        
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
-    {
-        // Dismiss the keyboard when the view is tapped on
-        reauthPassword?.resignFirstResponder()
-    }
+
 
 }
 

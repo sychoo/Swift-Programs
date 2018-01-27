@@ -13,20 +13,24 @@ import Firebase
 var displayName: String?
 var myIndex: Int!
 let cellKey = ["First Name", "Last Name", "Bio", "Email", "Phone Number", "Password", "Country", "State/Province", "Birthdate", "Gender"]
+var parameter: String!
 
 class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
     @IBAction func deleteButtonTapped(_ sender: Any)
     {
         // Delete Account Action
+        parameter = "Delete Account"
+        
         let deleteAccountAlert = UIAlertController(title: "Delete Your Account", message: "Once you delete your account, there is no going back. Please be certain.", preferredStyle: .alert)
 
         deleteAccountAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
 
-        deleteAccountAlert.addAction(UIAlertAction(title: "Continue", style: .default, handler:{ (action) in
-            self.performSegue(withIdentifier: "deleteAccountSegue", sender: self)
-        
         self.present(deleteAccountAlert, animated: true, completion: nil)
+        
+        deleteAccountAlert.addAction(UIAlertAction(title: "Continue", style: .default, handler:{ (action) in
+            self.performSegue(withIdentifier: "reauthenticateSegue", sender: self)
+
         }))
     }
     @IBOutlet weak var tableView: UITableView!
@@ -95,10 +99,10 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource
                 
                 self.cellValue = []
                 
-                for parameter in cellKey
+                for parameterStr in cellKey
                 {
                     // append dots for password cell
-                    if parameter == "Password"
+                    if parameterStr == "Password"
                     {
                         self.cellValue.append("●●●●●●")
                     }
@@ -106,13 +110,14 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource
                     else
                     {
                         // set displayName = First Name
-                        if parameter == "First Name"
+                        if parameterStr == "First Name"
                         {
                             // provide default displayName = ""
-                            displayName = myData![parameter] as? String ?? ""
+                            displayName = myData![parameterStr] as? String ?? ""
                         }
-                        self.cellValue.append(myData![parameter] as? String ?? "(none)")
+                        self.cellValue.append(myData![parameterStr] as? String ?? "(none)")
                     }
+                    print(self.cellValue)
                 }
             }
         }
@@ -161,10 +166,10 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         myIndex = indexPath.row
 
-        let para = cellKey[myIndex]
+        parameter = cellKey[myIndex]
         
         // reauthentic the user if the user updates the following parameters
-        if (para == "Password") || (para == "Email") || (para == "Phone Number")
+        if (parameter == "Password") || (parameter == "Email") || (parameter == "Phone Number")
         {
             performSegue(withIdentifier: "reauthenticateSegue", sender: self)
         }

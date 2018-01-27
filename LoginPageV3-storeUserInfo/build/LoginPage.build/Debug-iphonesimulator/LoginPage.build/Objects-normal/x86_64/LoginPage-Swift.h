@@ -275,13 +275,21 @@ SWIFT_CLASS("_TtC9LoginPage11SuccessPage")
 
 SWIFT_CLASS("_TtC9LoginPage14UserInfoUpdate")
 @interface UserInfoUpdate : UIViewController
-@property (nonatomic, weak) IBOutlet UITextField * _Nullable reauthPassword;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified parameterLabel;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified textField;
-- (IBAction)continueTapped:(id _Nonnull)sender;
 - (IBAction)saveTapped:(id _Nonnull)sender;
 - (IBAction)cancelTapped:(id _Nonnull)sender;
 - (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9LoginPage10UserReauth")
+@interface UserReauth : UIViewController
+- (void)viewDidLoad;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified reauthPassword;
+- (IBAction)continueTapped:(id _Nonnull)sender;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
