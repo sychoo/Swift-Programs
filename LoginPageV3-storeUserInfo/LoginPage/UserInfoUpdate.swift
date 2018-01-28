@@ -44,7 +44,7 @@ class UserInfoUpdate: UIViewController {
             let saveAlert = UIAlertController(title: "Confirmation", message: "Please ensure the accuracy of your information, You will be asked to verify the information that you provided.", preferredStyle: .alert)
         
             saveAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        
+            //self.presentAlert(alertContent: saveAlert)
             self.present(saveAlert, animated: true, completion: nil)
         
             saveAlert.addAction(UIAlertAction(title: "Continue", style: .default, handler:{ (action) in self.saveInfo()
@@ -130,8 +130,11 @@ class UserInfoUpdate: UIViewController {
                 else
                 {
                     let emailSentAlert = UIAlertController(title: "Email Verification", message: "Verification Email has been sent. Please check your Email and click the link to verify your account.", preferredStyle: .alert)
-                    emailSentAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    //emailSentAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                     self.present(emailSentAlert, animated: true, completion: nil)
+                    emailSentAlert.addAction(UIAlertAction(title: "Close", style: .default, handler:{ action in
+                        // dismiss window after email reset
+                        self.dismiss(animated: true, completion: nil)}))
                 }
         })
     } // function sendEmailVerification() Ends
@@ -161,8 +164,8 @@ class UserInfoUpdate: UIViewController {
                             print("\(Error!.localizedDescription)")
                             
                             // cannot display the alert. Alert is not in the window hiercy
-                            let emailChangeAlert = UIAlertController(title: "Email Verification", message: "\(Error!.localizedDescription ) Please try again.", preferredStyle: .alert)
-                        emailChangeAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                            let emailChangeAlert = UIAlertController(title: "Email Changing Error", message: "\(Error!.localizedDescription ) Please try again.", preferredStyle: .alert)
+                            emailChangeAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                             self.present(emailChangeAlert, animated: true, completion: nil)
                         }
                             
@@ -172,6 +175,8 @@ class UserInfoUpdate: UIViewController {
                             print("Success")
                             self.saveToDatabase()
                             self.sendVerificationEmail()
+                            //dismiss the VC after entering
+                            //self.dismiss(animated: true, completion: nil)
                         }
                         
                     })
@@ -217,12 +222,12 @@ class UserInfoUpdate: UIViewController {
                     if Error != nil
                     {
                         // print error message
-                        
                         print("\(Error!.localizedDescription)")
                         
                         // cannot display the alert. Alert is not in the window hiercy
-                        let passwordChangeAlert = UIAlertController(title: "Email Verification", message: "\(Error!.localizedDescription ) Please try again.", preferredStyle: .alert)
+                        let passwordChangeAlert = UIAlertController(title: "Password Changing Error", message: "\(Error!.localizedDescription ) Please try again.", preferredStyle: .alert)
                         passwordChangeAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        //self.presentAlert(alertContent: passwordChangeAlert)
                         self.present(passwordChangeAlert, animated: true, completion: nil)
                     }
                     
@@ -232,6 +237,9 @@ class UserInfoUpdate: UIViewController {
                         // successfully updated
                         // Notice: Password Cannot Be Saved To Database!
                         print("Success")
+                        
+                        //dismiss the VC after entering
+                        self.dismiss(animated: true, completion: nil)
                     }
                     
                 })
@@ -239,9 +247,18 @@ class UserInfoUpdate: UIViewController {
         }
         // dismiss the VC if nothing was entered.
         // dismiss the VC after entering
-        self.dismiss(animated: true, completion: nil)
+        //self.dismiss(animated: true, completion: nil)
+        else
+        {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
-    
+/*
+    func presentAlert(alertContent: UIAlertController!)
+    {
+        self.present(alertContent, animated: true, completion: nil)
+    }
+*/
   
     
 }

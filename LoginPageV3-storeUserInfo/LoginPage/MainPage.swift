@@ -51,10 +51,11 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource
         super.viewDidAppear(animated)
         self.tableView.reloadData()
         
-        
         // Update Non-database user profile
+        // update displayName as the first name of the user.
         let userProfile = Auth.auth().currentUser
         if let user = userProfile {
+            
             let changeRequest = user.createProfileChangeRequest()
             // change request: displayName
             changeRequest.displayName = displayName
@@ -81,6 +82,10 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource
         if let user = user
         {
             let uid = user.uid
+            // Update Non-database user profile
+            //let userEmail = user.email
+            //let userPhoneNumber = user.phoneNumber
+            
             //let email = user.email
             //let displayName = user.displayName
             //print(displayName)
@@ -95,6 +100,8 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource
                     self.present(dataFetchingError, animated: true, completion: nil)
                     return
                 }
+                
+                //docRef.setData(["Email" : userEmail ?? "(none)", "Phone Number" : userPhoneNumber ?? "(none)"])
                 let myData = docSnapshot.data()
                 
                 self.cellValue = []
@@ -117,8 +124,8 @@ class MainPage: UIViewController, UITableViewDelegate, UITableViewDataSource
                         }
                         self.cellValue.append(myData![parameterStr] as? String ?? "(none)")
                     }
-                    print(self.cellValue)
                 }
+                print(self.cellValue) //test
             }
         }
     }

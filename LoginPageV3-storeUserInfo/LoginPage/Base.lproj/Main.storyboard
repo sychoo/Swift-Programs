@@ -456,10 +456,10 @@
             </objects>
             <point key="canvasLocation" x="3477" y="130"/>
         </scene>
-        <!--User Info Update-->
+        <!--User Deletion-->
         <scene sceneID="Ptd-UX-nxs">
             <objects>
-                <viewController id="IHA-Gn-40J" customClass="UserInfoUpdate" customModule="LoginPage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IHA-Gn-40J" customClass="UserDeletion" customModule="LoginPage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kwd-z7-Rno">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
