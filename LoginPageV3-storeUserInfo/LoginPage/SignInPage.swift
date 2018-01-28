@@ -54,8 +54,10 @@ class SignInPage: UIViewController {
         }
         forgotPasswordAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
              self.present(forgotPasswordAlert, animated: true, completion: nil)
+        
         forgotPasswordAlert.addAction(UIAlertAction(title: "Reset Password", style: .default, handler:{ (action) in
             let resetEmail = forgotPasswordAlert.textFields?.first?.text
+            
             Auth.auth().sendPasswordReset(withEmail: resetEmail!, completion: { (Error) in
                 if Error != nil
                 {

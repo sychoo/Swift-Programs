@@ -39,7 +39,7 @@ class UserReauth: UIViewController {
         user?.reauthenticate(with: credential, completion: { (error) in
             if error != nil
             {
-                let reauthAlert = UIAlertController(title: "Error Reauthenticating User", message: "\(error?.localizedDescription ?? "Error Occurred when reauthenticating user") Please try again.", preferredStyle: .alert)
+                let reauthAlert = UIAlertController(title: "Error Authenticating User", message: "\(error?.localizedDescription ?? "Error Occurred when reauthenticating user") Please try again.", preferredStyle: .alert)
                 
                 //reauthAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
                 

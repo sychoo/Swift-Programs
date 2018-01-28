@@ -91,6 +91,51 @@ class UserInfoUpdate: UIViewController {
     }
     
 
+    func saveToDatabase()
+    {
+        let user = Auth.auth().currentUser
+        
+        if let user = user
+        {
+            let uid = user.uid
+            self.docRef = Firestore.firestore().document("Users/\(uid)/UserInfo/Profile")
+            self.docRef.setData(["\(parameter!)": self.textField?.text! ?? ""], options: SetOptions.merge()) {(error: Error?) in
+                if let error = error
+                {
+                    print("\(error.localizedDescription)")
+                }
+                else
+                {
+                    print("Data Saved!")
+                }
+            }
+        }
+    } // function saveToDatabase() ends
+    
+    // cannot display sendVerificationEmail() Window hiercy
+    // send verification email function
+    func sendVerificationEmail()
+    {
+        print("I'm Here, Again") //test
+        Auth.auth().currentUser?.sendEmailVerification(completion:
+            { (Error) in
+                if Error != nil
+                {
+                    let emailNotSentAlert = UIAlertController(title: "Email Verification Error", message: "Verification Email Failed to Send: \(Error!.localizedDescription)", preferredStyle: .alert)
+                    
+                    emailNotSentAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(emailNotSentAlert, animated: true, completion: nil)
+                }
+                    
+                else
+                {
+                    let emailSentAlert = UIAlertController(title: "Email Verification", message: "Verification Email has been sent. Please check your Email and click the link to verify your account.", preferredStyle: .alert)
+                    emailSentAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(emailSentAlert, animated: true, completion: nil)
+                }
+        })
+    } // function sendEmailVerification() Ends
+    
     // Save the Information to Firebase Authentication System
     func saveInfo()
     {
@@ -99,51 +144,6 @@ class UserInfoUpdate: UIViewController {
 
         // saveInfo() -> saveToDatabase()
         // Save Information to Firebase Database if Successfully Saved to Firebase Authentication System
-        func saveToDatabase()
-        {
-            let user = Auth.auth().currentUser
-            
-            if let user = user
-            {
-                let uid = user.uid
-                self.docRef = Firestore.firestore().document("Users/\(uid)/UserInfo/Profile")
-                self.docRef.setData(["\(parameter!)": self.textField?.text! ?? ""], options: SetOptions.merge()) {(error: Error?) in
-                    if let error = error
-                    {
-                        print("\(error.localizedDescription)")
-                    }
-                    else
-                    {
-                        print("Data Saved!")
-                    }
-                }
-            }
-        } // inner function saveToDatabase() ends
-        
-        
-        // cannot display sendVerificationEmail() Window hiercy
-        // send verification email function
-        func sendVerificationEmail()
-        {
-            print("I'm Here, Again") //test
-            Auth.auth().currentUser?.sendEmailVerification(completion:
-                { (Error) in
-                    if Error != nil
-                    {
-                        let emailNotSentAlert = UIAlertController(title: "Email Verification Error", message: "Verification Email Failed to Send: \(Error!.localizedDescription)", preferredStyle: .alert)
-                        
-                        emailNotSentAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                        self.present(emailNotSentAlert, animated: true, completion: nil)
-                    }
-                        
-                    else
-                    {
-                        let emailSentAlert = UIAlertController(title: "Email Verification", message: "Verification Email has been sent. Please check your Email and click the link to verify your account.", preferredStyle: .alert)
-                        emailSentAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                        self.present(emailSentAlert, animated: true, completion: nil)
-                    }
-            })
-        } // inner function sendEmailVerification() Ends
         
         if ((self.textField?.text != "") && (parameter != "Password"))
         {
@@ -170,8 +170,8 @@ class UserInfoUpdate: UIViewController {
                         {
                             // successfully updated
                             print("Success")
-                            saveToDatabase()
-                            sendVerificationEmail()
+                            self.saveToDatabase()
+                            self.sendVerificationEmail()
                         }
                         
                     })
