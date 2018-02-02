@@ -1,9 +1,13 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "6886652ba8d990062885084b898aeef2"
-build_time: [1516678068, 610999000]
+build_time: [1517169488, 399799000]
 inputs:
-  "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/LoginPage/SignInPage.swift": [1516504186, 0]
-  "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/LoginPage/MainPage.swift": [1516633728, 0]
-  "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/LoginPage/SuccessPage.swift": [1516629785, 0]
-  "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/LoginPage/UserInfoUpdate.swift": [1516633778, 0]
+  "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/LoginPage/UserDeletion.swift": [9223372036, 854775807]
+  "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/LoginPage/SignInPage.swift": [1517155970, 0]
+  "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/LoginPage/UserReauth.swift": [9223372036, 854775807]
+  "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/LoginPage/MainPage.swift": [1517114591, 0]
+  "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/LoginPage/SuccessPage.swift": [1517067209, 0]
+  "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/LoginPage/FirstTimeSignIn.swift": [9223372036, 854775807]
+  "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/LoginPage/UserInfoUpdate.swift": [1517158300, 0]
   "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/LoginPage/AppDelegate.swift": [1516542010, 0]
+  "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/LoginPage/PhoneVerification.swift": [9223372036, 854775807]

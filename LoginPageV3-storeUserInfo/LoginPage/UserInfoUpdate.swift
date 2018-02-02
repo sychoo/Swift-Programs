@@ -9,6 +9,8 @@
 import UIKit
 import Firebase
 
+var phoneNumber: String?
+
 class UserInfoUpdate: UIViewController {
 
     // document reference for firebase
@@ -29,7 +31,7 @@ class UserInfoUpdate: UIViewController {
         // Save Confirmation Alert
         // prompt user to continue
         // present the confirmation alert when password, email and phone numbers are parameters
-        let saveAlert = UIAlertController(title: "Confirmation", message: "Please ensure the accuracy of your information, You will be asked to verify the information that you provided.", preferredStyle: .alert)
+        let saveAlert = UIAlertController(title: "Confirm", message: "Please ensure the accuracy of your information, You will be asked to verify the information that you provided.", preferredStyle: .alert)
         
         saveAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         
@@ -41,7 +43,7 @@ class UserInfoUpdate: UIViewController {
     {
         if ((parameter == "Password") || (parameter == "Email") || (parameter == "Phone Number"))
         {
-            let saveAlert = UIAlertController(title: "Confirmation", message: "Please ensure the accuracy of your information, You will be asked to verify the information that you provided.", preferredStyle: .alert)
+            let saveAlert = UIAlertController(title: "Confirm", message: "Please ensure the accuracy of your information, You will be asked to verify the information that you provided.", preferredStyle: .alert)
         
             saveAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
             //self.presentAlert(alertContent: saveAlert)
@@ -139,6 +141,27 @@ class UserInfoUpdate: UIViewController {
         })
     } // function sendEmailVerification() Ends
     
+    func sendVerificationCode()
+    {
+        print("Started Executing the function") //test
+        PhoneAuthProvider.provider().verifyPhoneNumber(textField.text!, uiDelegate: nil, completion: {
+            (verificationID, Error) in
+            if Error != nil
+            {
+                print("\(Error!.localizedDescription)")
+            }
+                
+            else
+            {
+                // Success
+                let defaults = UserDefaults.standard
+                defaults.set(verificationID, forKey: "authVerificationID")
+                self.performSegue(withIdentifier: "phoneVerification", sender: self)
+            }
+        })
+        print("Finished Sending Code, jumping to the segue") //test
+    }
+    
     // Save the Information to Firebase Authentication System
     func saveInfo()
     {
@@ -187,30 +210,26 @@ class UserInfoUpdate: UIViewController {
             {
                 // Phone Number Update. Verify Phone Number ASAP, Enter 6-digit verification code. Update User Profile (Database)
                 // Additional Action other than updating database
-                if let user = Auth.auth().currentUser
-                {
-                    /*user.updatePhoneNumber(<#T##phoneNumberCredential: PhoneAuthCredential##PhoneAuthCredential#>, completion: { (Error) in
-                     if Error != nil
-                     {
-                     // print error message
-                     }
-                     
-                     else
-                     {
-                     // successfully updated
-                     }
-                     
-                     })*/
-                }
+                
+                phoneNumber = textField.text!
+                self.saveToDatabase()
+                
+                // keep one of the following statements
+                // self.sendVerificationCode()
+                self.dismiss(animated: true, completion: nil)
+
                 
             }
-                
+       
+            // dismiss after save to database after any parameter else
             else
             {
                 saveToDatabase()
                 self.dismiss(animated: true, completion: nil)
             }
-        } // if text field is not empty
+ 
+ 
+        } // if text field is not empty and not equal to password
             
         else if parameter == "Password"
         {
@@ -245,13 +264,19 @@ class UserInfoUpdate: UIViewController {
                 })
             }
         }
-        // dismiss the VC if nothing was entered.
+        // disable to save button if nothing was entered
+        else
+        {
+
+        }
         // dismiss the VC after entering
         //self.dismiss(animated: true, completion: nil)
+            /*
         else
         {
             self.dismiss(animated: true, completion: nil)
         }
+ */
     }
 /*
     func presentAlert(alertContent: UIAlertController!)

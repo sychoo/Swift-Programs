@@ -1,0 +1,653 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "UserReauth"
+provides-nominal:
+- "9LoginPage10UserReauthC"
+provides-member:
+- ["9LoginPage10UserReauthC", ""]
+provides-dynamic-lookup:
+- "continueTapped"
+- "reauthPassword"
+- "touchesBegan"
+- "viewDidLoad"
+depends-top-level:
+- !private "!="
+- !private "=="
+- "AssignmentPrecedence"
+- !private "Auth"
+- !private "AuthCredential"
+- "BooleanLiteralType"
+- !private "EmailAuthProvider"
+- "Set"
+- !private "String"
+- "StringLiteralType"
+- !private "UIAlertAction"
+- !private "UIAlertController"
+- "UIEvent"
+- "UITextField"
+- "UITouch"
+- "UIViewController"
+- "UserReauth"
+- !private "parameter"
+depends-member:
+- !private ["So4AuthC", "auth"]
+- !private ["So4AuthC", "currentUser"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "resignFirstResponder"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["s7CVarArgP", "Auth"]
+- !private ["s7CVarArgP", "EmailAuthProvider"]
+- !private ["s7CVarArgP", "UIAlertAction"]
+- !private ["s7CVarArgP", "UIAlertController"]
+- !private ["s7CVarArgP", "addAction"]
+- !private ["s7CVarArgP", "auth"]
+- !private ["s7CVarArgP", "credential"]
+- !private ["s7CVarArgP", "currentUser"]
+- !private ["s7CVarArgP", "email"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "parameter"]
+- !private ["s7CVarArgP", "performSegue"]
+- !private ["s7CVarArgP", "present"]
+- !private ["s7CVarArgP", "reauthPassword"]
+- !private ["s7CVarArgP", "reauthenticate"]
+- !private ["s7CVarArgP", "resignFirstResponder"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Auth"]
+- !private ["s28CustomDebugStringConvertibleP", "EmailAuthProvider"]
+- !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
+- !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
+- !private ["s28CustomDebugStringConvertibleP", "addAction"]
+- !private ["s28CustomDebugStringConvertibleP", "auth"]
+- !private ["s28CustomDebugStringConvertibleP", "credential"]
+- !private ["s28CustomDebugStringConvertibleP", "currentUser"]
+- !private ["s28CustomDebugStringConvertibleP", "email"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "parameter"]
+- !private ["s28CustomDebugStringConvertibleP", "performSegue"]
+- !private ["s28CustomDebugStringConvertibleP", "present"]
+- !private ["s28CustomDebugStringConvertibleP", "reauthPassword"]
+- !private ["s28CustomDebugStringConvertibleP", "reauthenticate"]
+- !private ["s28CustomDebugStringConvertibleP", "resignFirstResponder"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "Auth"]
+- !private ["s23CustomStringConvertibleP", "EmailAuthProvider"]
+- !private ["s23CustomStringConvertibleP", "UIAlertAction"]
+- !private ["s23CustomStringConvertibleP", "UIAlertController"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addAction"]
+- !private ["s23CustomStringConvertibleP", "auth"]
+- !private ["s23CustomStringConvertibleP", "credential"]
+- !private ["s23CustomStringConvertibleP", "currentUser"]
+- !private ["s23CustomStringConvertibleP", "email"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "parameter"]
+- !private ["s23CustomStringConvertibleP", "performSegue"]
+- !private ["s23CustomStringConvertibleP", "present"]
+- !private ["s23CustomStringConvertibleP", "reauthPassword"]
+- !private ["s23CustomStringConvertibleP", "reauthenticate"]
+- !private ["s23CustomStringConvertibleP", "resignFirstResponder"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["So17EmailAuthProviderC", "credential"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "Auth"]
+- !private ["s9EquatableP", "EmailAuthProvider"]
+- !private ["s9EquatableP", "UIAlertAction"]
+- !private ["s9EquatableP", "UIAlertController"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "addAction"]
+- !private ["s9EquatableP", "alert"]
+- !private ["s9EquatableP", "auth"]
+- !private ["s9EquatableP", "credential"]
+- !private ["s9EquatableP", "currentUser"]
+- !private ["s9EquatableP", "default"]
+- !private ["s9EquatableP", "email"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "parameter"]
+- !private ["s9EquatableP", "performSegue"]
+- !private ["s9EquatableP", "present"]
+- !private ["s9EquatableP", "reauthPassword"]
+- !private ["s9EquatableP", "reauthenticate"]
+- !private ["s9EquatableP", "resignFirstResponder"]
+- !private ["s9EquatableP", "text"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- ["s9EquatableP", ""]
+- !private ["s5ErrorP", "localizedDescription"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "Auth"]
+- !private ["s8HashableP", "EmailAuthProvider"]
+- !private ["s8HashableP", "UIAlertAction"]
+- !private ["s8HashableP", "UIAlertController"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "addAction"]
+- !private ["s8HashableP", "alert"]
+- !private ["s8HashableP", "auth"]
+- !private ["s8HashableP", "credential"]
+- !private ["s8HashableP", "currentUser"]
+- !private ["s8HashableP", "default"]
+- !private ["s8HashableP", "email"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "parameter"]
+- !private ["s8HashableP", "performSegue"]
+- !private ["s8HashableP", "present"]
+- !private ["s8HashableP", "reauthPassword"]
+- !private ["s8HashableP", "reauthenticate"]
+- !private ["s8HashableP", "resignFirstResponder"]
+- !private ["s8HashableP", "text"]
+- !private ["s8HashableP", "viewDidLoad"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "Auth"]
+- !private ["So8NSCodingP", "EmailAuthProvider"]
+- !private ["So8NSCodingP", "UIAlertAction"]
+- !private ["So8NSCodingP", "UIAlertController"]
+- !private ["So8NSCodingP", "addAction"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "parameter"]
+- !private ["So8NSCodingP", "performSegue"]
+- !private ["So8NSCodingP", "present"]
+- !private ["So8NSCodingP", "reauthPassword"]
+- !private ["So8NSCodingP", "resignFirstResponder"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "Auth"]
+- !private ["So26NSExtensionRequestHandlingP", "EmailAuthProvider"]
+- !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
+- !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
+- !private ["So26NSExtensionRequestHandlingP", "addAction"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "parameter"]
+- !private ["So26NSExtensionRequestHandlingP", "performSegue"]
+- !private ["So26NSExtensionRequestHandlingP", "present"]
+- !private ["So26NSExtensionRequestHandlingP", "reauthPassword"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "Auth"]
+- !private ["So8NSObjectC", "AuthCredential"]
+- !private ["So8NSObjectC", "EmailAuthProvider"]
+- ["So8NSObjectC", "Set"]
+- !private ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "UIAlertAction"]
+- !private ["So8NSObjectC", "UIAlertController"]
+- ["So8NSObjectC", "UIEvent"]
+- ["So8NSObjectC", "UITextField"]
+- ["So8NSObjectC", "UITouch"]
+- !private ["So8NSObjectC", "addAction"]
+- !private ["So8NSObjectC", "auth"]
+- ["So8NSObjectC", "continueTapped"]
+- !private ["So8NSObjectC", "credential"]
+- !private ["So8NSObjectC", "currentUser"]
+- !private ["So8NSObjectC", "email"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "parameter"]
+- !private ["So8NSObjectC", "performSegue"]
+- !private ["So8NSObjectC", "present"]
+- ["So8NSObjectC", "reauthPassword"]
+- !private ["So8NSObjectC", "reauthenticate"]
+- !private ["So8NSObjectC", "resignFirstResponder"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "touchesBegan"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "Auth"]
+- !private ["So16NSObjectProtocolP", "EmailAuthProvider"]
+- !private ["So16NSObjectProtocolP", "UIAlertAction"]
+- !private ["So16NSObjectProtocolP", "UIAlertController"]
+- !private ["So16NSObjectProtocolP", "addAction"]
+- !private ["So16NSObjectProtocolP", "auth"]
+- !private ["So16NSObjectProtocolP", "credential"]
+- !private ["So16NSObjectProtocolP", "currentUser"]
+- !private ["So16NSObjectProtocolP", "email"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "parameter"]
+- !private ["So16NSObjectProtocolP", "performSegue"]
+- !private ["So16NSObjectProtocolP", "present"]
+- !private ["So16NSObjectProtocolP", "reauthPassword"]
+- !private ["So16NSObjectProtocolP", "reauthenticate"]
+- !private ["So16NSObjectProtocolP", "resignFirstResponder"]
+- !private ["So16NSObjectProtocolP", "text"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s16RawRepresentableP", "alert"]
+- !private ["s16RawRepresentableP", "default"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "resignFirstResponder"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So13UIAlertActionC", "init"]
+- !private ["SC18UIAlertActionStyleO", "default"]
+- !private ["So17UIAlertControllerC", "addAction"]
+- !private ["So17UIAlertControllerC", "init"]
+- !private ["SC22UIAlertControllerStyleO", "alert"]
+- !private ["So12UIAppearanceP", "resignFirstResponder"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "Auth"]
+- !private ["So21UIAppearanceContainerP", "EmailAuthProvider"]
+- !private ["So21UIAppearanceContainerP", "UIAlertAction"]
+- !private ["So21UIAppearanceContainerP", "UIAlertController"]
+- !private ["So21UIAppearanceContainerP", "addAction"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "parameter"]
+- !private ["So21UIAppearanceContainerP", "performSegue"]
+- !private ["So21UIAppearanceContainerP", "present"]
+- !private ["So21UIAppearanceContainerP", "reauthPassword"]
+- !private ["So21UIAppearanceContainerP", "resignFirstResponder"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So18UIContentContainerP", "Auth"]
+- !private ["So18UIContentContainerP", "EmailAuthProvider"]
+- !private ["So18UIContentContainerP", "UIAlertAction"]
+- !private ["So18UIContentContainerP", "UIAlertController"]
+- !private ["So18UIContentContainerP", "addAction"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "parameter"]
+- !private ["So18UIContentContainerP", "performSegue"]
+- !private ["So18UIContentContainerP", "present"]
+- !private ["So18UIContentContainerP", "reauthPassword"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", ""]
+- !private ["So30UIContentSizeCategoryAdjustingP", "resignFirstResponder"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "resignFirstResponder"]
+- !private ["So9UIControlC", "text"]
+- !private ["So17UICoordinateSpaceP", "resignFirstResponder"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "resignFirstResponder"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "Auth"]
+- !private ["So18UIFocusEnvironmentP", "EmailAuthProvider"]
+- !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
+- !private ["So18UIFocusEnvironmentP", "UIAlertController"]
+- !private ["So18UIFocusEnvironmentP", "addAction"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "parameter"]
+- !private ["So18UIFocusEnvironmentP", "performSegue"]
+- !private ["So18UIFocusEnvironmentP", "present"]
+- !private ["So18UIFocusEnvironmentP", "reauthPassword"]
+- !private ["So18UIFocusEnvironmentP", "resignFirstResponder"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "resignFirstResponder"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So10UIKeyInputP", "resignFirstResponder"]
+- !private ["So10UIKeyInputP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "Auth"]
+- !private ["So30UIPasteConfigurationSupportingP", "EmailAuthProvider"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
+- !private ["So30UIPasteConfigurationSupportingP", "addAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "parameter"]
+- !private ["So30UIPasteConfigurationSupportingP", "performSegue"]
+- !private ["So30UIPasteConfigurationSupportingP", "present"]
+- !private ["So30UIPasteConfigurationSupportingP", "reauthPassword"]
+- !private ["So30UIPasteConfigurationSupportingP", "resignFirstResponder"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So11UIResponderC", "Auth"]
+- !private ["So11UIResponderC", "AuthCredential"]
+- !private ["So11UIResponderC", "EmailAuthProvider"]
+- ["So11UIResponderC", "Set"]
+- !private ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "UIAlertAction"]
+- !private ["So11UIResponderC", "UIAlertController"]
+- ["So11UIResponderC", "UIEvent"]
+- ["So11UIResponderC", "UITextField"]
+- ["So11UIResponderC", "UITouch"]
+- !private ["So11UIResponderC", "addAction"]
+- ["So11UIResponderC", "continueTapped"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "parameter"]
+- !private ["So11UIResponderC", "performSegue"]
+- !private ["So11UIResponderC", "present"]
+- ["So11UIResponderC", "reauthPassword"]
+- !private ["So11UIResponderC", "resignFirstResponder"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "touchesBegan"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "Auth"]
+- !private ["So30UIResponderStandardEditActionsP", "EmailAuthProvider"]
+- !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
+- !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
+- !private ["So30UIResponderStandardEditActionsP", "addAction"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "parameter"]
+- !private ["So30UIResponderStandardEditActionsP", "performSegue"]
+- !private ["So30UIResponderStandardEditActionsP", "present"]
+- !private ["So30UIResponderStandardEditActionsP", "reauthPassword"]
+- !private ["So30UIResponderStandardEditActionsP", "resignFirstResponder"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So35UISpringLoadedInteractionSupportingP", "addAction"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So16UIStateRestoringP", "Auth"]
+- !private ["So16UIStateRestoringP", "EmailAuthProvider"]
+- !private ["So16UIStateRestoringP", "UIAlertAction"]
+- !private ["So16UIStateRestoringP", "UIAlertController"]
+- !private ["So16UIStateRestoringP", "addAction"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "parameter"]
+- !private ["So16UIStateRestoringP", "performSegue"]
+- !private ["So16UIStateRestoringP", "present"]
+- !private ["So16UIStateRestoringP", "reauthPassword"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So15UITextDraggableP", "resignFirstResponder"]
+- !private ["So15UITextDraggableP", "text"]
+- !private ["So15UITextDroppableP", "resignFirstResponder"]
+- !private ["So15UITextDroppableP", "text"]
+- !private ["So11UITextFieldC", "resignFirstResponder"]
+- !private ["So11UITextFieldC", "text"]
+- !private ["So11UITextInputP", "resignFirstResponder"]
+- !private ["So11UITextInputP", "text"]
+- !private ["So17UITextInputTraitsP", "resignFirstResponder"]
+- !private ["So17UITextInputTraitsP", "text"]
+- !private ["So34UITextPasteConfigurationSupportingP", "resignFirstResponder"]
+- !private ["So34UITextPasteConfigurationSupportingP", "text"]
+- !private ["So18UITraitEnvironmentP", "Auth"]
+- !private ["So18UITraitEnvironmentP", "EmailAuthProvider"]
+- !private ["So18UITraitEnvironmentP", "UIAlertAction"]
+- !private ["So18UITraitEnvironmentP", "UIAlertController"]
+- !private ["So18UITraitEnvironmentP", "addAction"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "parameter"]
+- !private ["So18UITraitEnvironmentP", "performSegue"]
+- !private ["So18UITraitEnvironmentP", "present"]
+- !private ["So18UITraitEnvironmentP", "reauthPassword"]
+- !private ["So18UITraitEnvironmentP", "resignFirstResponder"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "resignFirstResponder"]
+- !private ["So6UIViewC", "text"]
+- !private ["So16UIViewControllerC", "Auth"]
+- !private ["So16UIViewControllerC", "AuthCredential"]
+- !private ["So16UIViewControllerC", "EmailAuthProvider"]
+- ["So16UIViewControllerC", "Set"]
+- !private ["So16UIViewControllerC", "String"]
+- !private ["So16UIViewControllerC", "UIAlertAction"]
+- !private ["So16UIViewControllerC", "UIAlertController"]
+- ["So16UIViewControllerC", "UIEvent"]
+- ["So16UIViewControllerC", "UITextField"]
+- ["So16UIViewControllerC", "UITouch"]
+- !private ["So16UIViewControllerC", "addAction"]
+- ["So16UIViewControllerC", "continueTapped"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "parameter"]
+- !private ["So16UIViewControllerC", "performSegue"]
+- !private ["So16UIViewControllerC", "present"]
+- ["So16UIViewControllerC", "reauthPassword"]
+- ["So16UIViewControllerC", "touchesBegan"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", ""]
+- !private ["So4UserC", "email"]
+- !private ["So4UserC", "reauthenticate"]
+- !private ["So8UserInfoP", "email"]
+- !private ["So8UserInfoP", "reauthenticate"]
+- !private ["9LoginPage10UserReauthC", "Auth"]
+- !private ["9LoginPage10UserReauthC", "AuthCredential"]
+- !private ["9LoginPage10UserReauthC", "EmailAuthProvider"]
+- ["9LoginPage10UserReauthC", "Set"]
+- !private ["9LoginPage10UserReauthC", "String"]
+- !private ["9LoginPage10UserReauthC", "UIAlertAction"]
+- !private ["9LoginPage10UserReauthC", "UIAlertController"]
+- ["9LoginPage10UserReauthC", "UIEvent"]
+- ["9LoginPage10UserReauthC", "UITextField"]
+- ["9LoginPage10UserReauthC", "UITouch"]
+- ["9LoginPage10UserReauthC", "continueTapped"]
+- ["9LoginPage10UserReauthC", "deinit"]
+- ["9LoginPage10UserReauthC", "init"]
+- !private ["9LoginPage10UserReauthC", "parameter"]
+- !private ["9LoginPage10UserReauthC", "performSegue"]
+- !private ["9LoginPage10UserReauthC", "present"]
+- ["9LoginPage10UserReauthC", "reauthPassword"]
+- ["9LoginPage10UserReauthC", "touchesBegan"]
+- ["9LoginPage10UserReauthC", "viewDidLoad"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "resignFirstResponder"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "EmailAuthProvider"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "credential"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "currentUser"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "email"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "parameter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "performSegue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reauthPassword"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reauthenticate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resignFirstResponder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "So4AuthC"
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "So17EmailAuthProviderC"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s5ErrorP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So13UIAlertActionC"
+- !private "SC18UIAlertActionStyleO"
+- !private "So17UIAlertControllerC"
+- !private "SC22UIAlertControllerStyleO"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So10UIKeyInputP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- !private "So15UITextDraggableP"
+- !private "So15UITextDroppableP"
+- !private "So11UITextFieldC"
+- !private "So11UITextInputP"
+- !private "So17UITextInputTraitsP"
+- !private "So34UITextPasteConfigurationSupportingP"
+- "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "So4UserC"
+- !private "So8UserInfoP"
+- "9LoginPage10UserReauthC"
+- !private "s23_BidirectionalIndexableP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSnapshotMetadata.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRCollectionReference.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentReference.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentChange.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestore.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FirebaseFirestore.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldValue.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRWriteBatch.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldPath.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRListenerRegistration.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRTransaction.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreSettings.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSetOptions.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreErrors.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRGeoPoint.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentSnapshot.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuerySnapshot.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuery.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Modules/module.modulemap"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/SimonChu/Documents/Swift/LoginPageV3-storeUserInfo/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+interface-hash: "1e2e368f63f1a1f2cb47a34dacfd5597"

@@ -26,7 +26,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "Auth"
 - "Bool"
-- !private "BooleanLiteralType"
+- "BooleanLiteralType"
 - !private "CastingPrecedence"
 - !private "DocumentReference"
 - !private "Firestore"

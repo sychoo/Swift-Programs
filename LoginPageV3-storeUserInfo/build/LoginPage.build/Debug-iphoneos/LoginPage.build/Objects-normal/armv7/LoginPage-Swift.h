@@ -200,16 +200,29 @@ SWIFT_CLASS("_TtC9LoginPage11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableView;
-@class UITableViewCell;
 @class NSBundle;
 @class NSCoder;
 
+SWIFT_CLASS("_TtC9LoginPage15FirstTimeSignIn")
+@interface FirstTimeSignIn : UIViewController
+- (IBAction)continueTapped:(id _Nonnull)sender;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+@class UITableViewCell;
+
 SWIFT_CLASS("_TtC9LoginPage8MainPage")
 @interface MainPage : UIViewController <UITableViewDataSource, UITableViewDelegate>
+- (IBAction)deleteButtonTapped:(id _Nonnull)sender;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
@@ -219,9 +232,21 @@ SWIFT_CLASS("_TtC9LoginPage8MainPage")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UISegmentedControl;
 @class UILabel;
 @class UITextField;
+
+SWIFT_CLASS("_TtC9LoginPage17PhoneVerification")
+@interface PhoneVerification : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified label;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified textField;
+- (IBAction)verifyTapped:(id _Nonnull)sender;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UISegmentedControl;
 @class UIButton;
 @class UITouch;
 @class UIEvent;
@@ -248,7 +273,10 @@ SWIFT_CLASS("_TtC9LoginPage11SuccessPage")
 @interface SuccessPage : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified uidLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified isFirstTimeSignIn;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (IBAction)signOutTapped:(id _Nonnull)sender;
 - (IBAction)mainPageTapped:(id _Nonnull)sender;
@@ -257,10 +285,33 @@ SWIFT_CLASS("_TtC9LoginPage11SuccessPage")
 @end
 
 
-SWIFT_CLASS("_TtC9LoginPage14UserInfoUpdate")
-@interface UserInfoUpdate : UIViewController
+SWIFT_CLASS("_TtC9LoginPage12UserDeletion")
+@interface UserDeletion : UIViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9LoginPage14UserInfoUpdate")
+@interface UserInfoUpdate : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified parameterLabel;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified textField;
+- (IBAction)saveTapped:(id _Nonnull)sender;
+- (IBAction)cancelTapped:(id _Nonnull)sender;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9LoginPage10UserReauth")
+@interface UserReauth : UIViewController
+- (void)viewDidLoad;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified reauthPassword;
+- (IBAction)continueTapped:(id _Nonnull)sender;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

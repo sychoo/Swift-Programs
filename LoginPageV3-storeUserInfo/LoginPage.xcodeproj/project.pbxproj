@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		80C44B117B8DC4C196B7CEE1 /* Pods_LoginPage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA9E93D567BB6D0133B0799 /* Pods_LoginPage.framework */; };
 		C307EDAD201D839A009DDAF4 /* UserDeletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C307EDAC201D839A009DDAF4 /* UserDeletion.swift */; };
+		C307EDAF201E2E01009DDAF4 /* PhoneVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C307EDAE201E2E01009DDAF4 /* PhoneVerification.swift */; };
 		C325CFA12013AC850034D56C /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C325CFA02013AC850034D56C /* MainPage.swift */; };
 		C325CFA32013AEA10034D56C /* SuccessPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C325CFA22013AEA10034D56C /* SuccessPage.swift */; };
 		C35CFA15200BB28700EC402F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35CFA14200BB28700EC402F /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		58EE6F162776F0F0305A49A1 /* Pods-LoginPage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginPage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginPage/Pods-LoginPage.debug.xcconfig"; sourceTree = "<group>"; };
 		9AE2A009A2C2DCB26D3AB255 /* Pods-LoginPage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginPage.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginPage/Pods-LoginPage.release.xcconfig"; sourceTree = "<group>"; };
 		C307EDAC201D839A009DDAF4 /* UserDeletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDeletion.swift; sourceTree = "<group>"; };
+		C307EDAE201E2E01009DDAF4 /* PhoneVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneVerification.swift; sourceTree = "<group>"; };
 		C325CFA02013AC850034D56C /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		C325CFA22013AEA10034D56C /* SuccessPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPage.swift; sourceTree = "<group>"; };
 		C35CFA11200BB28700EC402F /* LoginPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,7 @@
 				C3CE7727201D0EF800C44BA2 /* UserReauth.swift */,
 				C307EDAC201D839A009DDAF4 /* UserDeletion.swift */,
 				C3DA6325201627DE001C62A5 /* UserInfoUpdate.swift */,
+				C307EDAE201E2E01009DDAF4 /* PhoneVerification.swift */,
 				C35CFA18200BB28700EC402F /* Main.storyboard */,
 				C35CFA1B200BB28700EC402F /* Assets.xcassets */,
 				C35CFA1D200BB28700EC402F /* LaunchScreen.storyboard */,
@@ -145,6 +148,11 @@
 					C35CFA10200BB28700EC402F = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -265,6 +273,7 @@
 				C384749F201A82B600E36728 /* FirstTimeSignIn.swift in Sources */,
 				C3DA6326201627DE001C62A5 /* UserInfoUpdate.swift in Sources */,
 				C35CFA15200BB28700EC402F /* AppDelegate.swift in Sources */,
+				C307EDAF201E2E01009DDAF4 /* PhoneVerification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
