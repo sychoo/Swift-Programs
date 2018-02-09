@@ -154,6 +154,7 @@ class UserInfoUpdate: UIViewController {
             else
             {
                 // Success
+                print("Phone successfully verified!")
                 let defaults = UserDefaults.standard
                 defaults.set(verificationID, forKey: "authVerificationID")
                 self.performSegue(withIdentifier: "phoneVerification", sender: self)
@@ -214,6 +215,7 @@ class UserInfoUpdate: UIViewController {
                 phoneNumber = textField.text!
                 self.saveToDatabase()
                 
+                // Verify the phone Number
                 // keep one of the following statements
                 // self.sendVerificationCode()
                 self.dismiss(animated: true, completion: nil)

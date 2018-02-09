@@ -115,6 +115,37 @@ class SignInPage: UIViewController {
                         if User!.isEmailVerified
                         {
                             // User is found, and Email address is verified, check if the user is signing in for the first time
+                            
+                            // commented code is to set isFirstSignIn = true if the fields doesn't exist.
+                            
+                            // set isFirstTimeSignIn = true;
+                            let user = Auth.auth().currentUser
+                            // set isFirstTimeSignIn False after the user fill in the information
+                            if let user = user
+                            {
+                                let uid = user.uid
+                                //Firestore.firestore().document("Users/\(uid)/UserInfo/Logs").setData(["isFirstTimeSignIn" : true])
+ 
+                                let docRef = Firestore.firestore().document("Users/\(uid)/UserInfo/Logs")
+                                
+                                docRef.getDocument { (document, error) in
+                                    if let document = document
+                                    {
+                                        //print("Document data: \(document.data())")
+                                        if document.data() == nil
+                                        {
+                                            docRef.setData(["isFirstTimeSignIn": true])
+                                        }
+                                    }
+                                    else
+                                    {
+                                        print("Document does not exist")
+                                        //docRef.setData(["isFirstTimeSignIn": true])
+                                    }
+                                }
+                            }
+                            // The code above is optional
+                            
                             self.performSegue(withIdentifier: "signInSuccessSegue", sender: self)
                         }
                         else
@@ -152,6 +183,20 @@ class SignInPage: UIViewController {
                     
                     // check that the user isn't nil
                     if User != nil && Error == nil {
+                        
+                        // set isFirstTimeSignIn = true;
+                        let user = Auth.auth().currentUser
+                        
+                        // set isFirstTimeSignIn true once the user register
+                        if let user = user
+                        {
+                            let uid = user.uid
+                            let email = user.email
+                            // save non-database information to database when register
+                            
+                            Firestore.firestore().document("Users/\(uid)/UserInfo/Logs").setData(["isFirstTimeSignIn" : true])
+                            Firestore.firestore().document("Users/\(uid)/UserInfo/Profile").setData(["Email": email!])
+                        }
                         // send the verification email
                         self.sendVerificationEmail()
                         // User is found, go to home screen
